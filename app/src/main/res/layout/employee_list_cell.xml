@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="empdetailsModelDO"
+            type="com.winit.iKonnect.dataobject.response.EmpdetailsModelDO">
+        </variable>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/content_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.winit.iKonnect.ui.customview.CustomImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="@dimen/margin_50"
+                android:layout_height="@dimen/margin_50"
+                android:paddingBottom="@dimen/margin_2"
+                android:paddingTop="@dimen/margin_2"
+                android:layout_marginRight="@dimen/margin_15"
+                android:src="@drawable/profile_pic"
+                android:background="@drawable/pic_round_corner" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{empdetailsModelDO.KnownAs}"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small_16"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Staff No: "
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_very_small_14" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{empdetailsModelDO.StaffNumber}"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_very_small_14" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{empdetailsModelDO.Email}"
+                    android:gravity="center"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_very_small_14"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position: "
+                        android:gravity="center"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_size_very_small_14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{empdetailsModelDO.PersonalArea}"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_very_small_12"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Location: "
+                        android:gravity="center"
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_size_very_small_14"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{empdetailsModelDO.PersonalSubArea}"
+                        android:gravity="center"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_very_small_12"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

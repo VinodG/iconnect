@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="feedDo"
+            type="com.winit.iKonnect.dataobject.FeedsDO"/>
+        <variable
+            name="feedBinder"
+            type="com.winit.iKonnect.module.feed.FeedBinder" />
+        <import type="android.view.View"/>
+        <import type="com.winit.iKonnect.dataobject.PostFeedActionDO"/>
+        <variable name="isCommentEnable" default = "true" type="Boolean"/>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/feeds_cell"
+                bind:feedDo="@{feedDo}"
+                bind:isCommentEnable="@{isCommentEnable}"
+                bind:feedBinder="@{feedBinder}"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/background_bg"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingStart="@dimen/margin_15"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:onClick="@{() ->feedBinder.details(PostFeedActionDO.LIKE,feedDo)}"
+                    android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfLikes == 0?View.GONE:View.VISIBLE):View.GONE}"
+                    android:text="@{PostFeedActionDO.format(@string/likes,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfLikes:0,PostFeedActionDO.LIKE)}"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfComments == 0 || feedDo.cmspoststatModel.noOfLikes == 0?View.GONE:View.VISIBLE):View.GONE}"
+                    android:text=", "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:onClick="@{() ->feedBinder.details(PostFeedActionDO.COMMENT,feedDo)}"
+                    android:paddingTop="@dimen/margin_5"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfComments == 0?View.GONE:View.VISIBLE):View.GONE}"
+                    android:text="@{PostFeedActionDO.format(@string/comments,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfComments:0,PostFeedActionDO.COMMENT)}"
+                    android:layout_marginEnd="@dimen/margin_5"
+                    android:layout_marginRight="@dimen/margin_5"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/flComments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="@dimen/margin_100"></FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

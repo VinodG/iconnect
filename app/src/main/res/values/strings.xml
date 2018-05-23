@@ -1,0 +1,1039 @@
+<resources>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="app_name">iKonnect</string>
+    <string name="app_version">V1.0</string>
+
+    <!--Splash-->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">Get Started</string>
+
+    <!--<string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+a
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>-->
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+
+    <!--Menu String Start-->
+    <string name="dashboard">Home</string>
+    <string name="emp_search_hint">Search By Name or Staff Number</string>
+    <string name="my_favourate">My Favourites</string>
+    <string name="my_profile">My Profile</string>
+    <string name="track_service">Track Service Request</string>
+    <string name="messages">Messages</string>
+    <string name="pay_Slip">Pay Slip</string>
+    <string name="message">Message</string>
+    <string name="notification">Notifications</string>
+    <string name="weekDate">Monday 03</string>
+    <string name="payslip">Pay slips</string>
+    <string name="settings">Settings</string>
+    <string name="InBox">Inbox</string>
+    <string name="Chat">Chat</string>
+    <string name="Calender">Calendar</string>
+    <string name="TandC">Terms &amp; Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="Pn">Push Notification</string>
+    <string name="Language">Change language</string>
+    <string name="Cp">Change Password</string>
+    <string name="CU">Contact Us</string>
+    <string name="Th">Quote of the day </string>
+    <string name="forget">FORGOT?</string>
+    <string name="version">V 1.0</string>
+    <!--Menu String End-->
+
+
+    <!--Activity Tiltles-->
+    <!--Activity Tiltles End-->
+
+    <!-- POP UP's-->
+    <string name="alert">ALERT</string>
+    <string name="force_logout">You have logged in from a new device. You will be logged out from this device.</string>
+    <string name="select_language">Please select language</string>
+
+    <string name="Contact_Us">Contact Us</string>
+    <string name="change_pass">Change Password</string>
+    <string name="mycalender">My Calendar</string>
+    <string name="success">Success</string>
+    <string name="warning">WARNING</string>
+    <string name="OK">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="No_Network">No Internet connection, Please check your connection and try again.</string>
+    <string name="No_Network_connection">No Internet connection, Please check your connection and try again.</string>
+    <string name="enter_your_comment">Please enter your comment.</string>
+    <string name="enter_your_message">Please enter your message.</string>
+    <string name="license">Please mention Do you have a valid UAE/Oman Driving Licence</string>
+    <string name="warning_license">Employee without a valid UAE/Oman driving license is not eligible for this loan</string>
+    <string name="transportLoan_attach_popup1">Quotation/Registered Vehicle Evaluation, RTA Passing Certificate, Dealer\'s Trade License/Seller\'s Passport Copy, Possession Certificate/Car Registration Card Copy are required.</string>
+    <string name="transportLoan_attach_popup2">Please make sure you have attached:\n\n1.Quotation/Registered Vehicle Evaluation.\n\n2.RTA Passing Certificate.\n\n3.Dealer\'s Trade License/Seller\'s Passport Copy.\n\n4.Possession Certificate/Car Registration Card Copy.</string>
+    <string name="sick_leave">Please attach sick leave document</string>
+    <string name="transportLoan_attach_new">Please attach your Quotation for New car</string>
+    <!-- POP UP's END-->
+
+
+    <string-array name="family_relation">
+        <item>Father</item>
+        <item>Mother</item>
+        <item>Brother</item>
+        <item>Sister</item>
+    </string-array>
+
+
+    <!--Loader Messages Start-->
+    <string name="fetch_feeds">Fetching Feeds...</string>
+    <string name="sharing">Sharing please wait...</string>
+    <string name="loading">Loading...</string>
+    <string name="loading_feeds">Loading Feeds...</string>
+    <string name="loading_notifications">Loading Notifications...</string>
+    <string name="loading_likes">Loading Likes...</string>
+    <string name="loading_comments">Loading Comments...</string>
+    <string name="Likes">Likes</string>
+    <string name="Comments">Comments</string>
+    <string name="Feeds">Feeds</string>
+    <string name="Posting_your_comment">Posting your comment...</string>
+    <!--Loader Messages End-->
+
+
+    <!-- DashBoard Start -->
+    <string name="news_feeds">News Feed</string>
+    <string name="service_request">Services</string>
+    <string name="track">Track</string>
+    <!-- Feeds Adapter Start-->
+    <string name="liked">Liked</string>
+    <string name="like">Like</string>
+    <string name="likes">%s Likes</string>
+    <string name="key_get_data">getdata</string>
+    <string name="comments">%s Comments</string>
+    <string name="views">%s Views</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="mins_ago"> mins ago</string>
+    <string name="hour_ago"> hour ago</string>
+    <!-- Feeds Adapter End-->
+
+    <!-- CategoryFilterList Start-->
+    <string name="fetching_categories">Fetching Categories...</string>
+    <string name="filter_title">Filter News Feed</string>
+    <string name="apply">APPLY</string>
+    <!-- CategoryFilterList End-->
+    <!-- DashBoard End -->
+
+    <!-- Comment Activity Start -->
+    <string name="comment_hint">Write your comment here...</string>
+    <string name="type_message">Type a message...</string>
+    <!-- Comment Activity End -->
+
+    <!---->
+    <string name="no_feeds">No Feeds found.</string>
+    <string name="no_Notications">No Notifications found.</string>
+    <!---->
+
+    <!-- Questions Start -->
+    <!-- Question Header Name Start-->
+    <string name="type_of_request">Type of Request</string>
+    <string name="does_ur_job_require_dl">Does your job require driving license ?</string>
+    <string name="cost_charge_to">Cost Charge to</string>
+    <string name="chamber_of_commerce_status">Chamber of Commerce Status</string>
+    <string name="is_salary_require">Is salary required in letter ?</string>
+    <string name="amount_reimbursable">Amount % Reimbursable</string>
+    <string name="clinic_in_network">Clinic in network</string>
+    <string name="medical_card_used">Medical card used</string>
+    <string name="reason_for_travel">Reason for Travel</string>
+    <string name="visa_type">Visa Type</string>
+    <string name="eligible_to_employ">Eligible as per Employment Contract</string>
+
+    <!-- Question Header Name End-->
+    <!-- Question options-->
+    <string name="new_licence">New Licence</string>
+    <string name="licence_renewal">Licence Renewal</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="company">Company</string>
+    <string name="employ">Employee</string>
+    <string name="with_coc">With CoC</string>
+    <string name="without_coc">Without CoC</string>
+    <string name="business">Business</string>
+    <string name="personal">Personal</string>
+    <string name="visit_visa">Visit Visa</string>
+    <string name="recident_visa">Residence Visa</string>
+
+    <string name="within_ksa">Within KSA</string>
+    <string name="outside_ksa">Outside KSA</string>
+
+    <string name="twenty_per">20%</string>
+    <string name="hundred_per">100%</string>
+    <!-- Question options-->
+    <!-- Question Arabic options-->
+    <string name="new_licence_ar">New Licence</string>
+    <string name="licence_renewal_ar">Licence Renewal</string>
+    <!-- Question Arabic options-->
+    <!-- Questions End -->
+
+    <!--Tag's -->
+    <string name="isRound">IsRound</string>
+    <string name="IMAGE_PATH">IMAGE_PATH</string>
+    <string name="parentCategory">parentCategory</string>
+    <!--Tag's -->
+
+    <string name="title_activity_family_residance_visit_visa">FamilyResidanceVIsitVIsaActivity</string>
+    <string name="submit">SUBMIT</string>
+    <string name="submit1">SUBMIT</string>
+
+    <!-- Form Header Name -->
+    <string name="drivingHeader">Driving License Letter Request (New/Renewal)</string>
+    <string name="VisaHeader">Visit Visa Request Letter</string>
+    <string name="EmploymentHeader">Employment Letter Request</string>
+    <string name="BankAccountHeader">Bank Account Update</string>
+    <string name="BankLoanHeader">Bank Loan Letter Request</string>
+    <string name="PayrollCardHeader">Payroll Card / Pin Number</string>
+    <string name="InsuranceCardHeader">Medical Insurance Card Request</string>
+    <string name="LeaveRequestHeader">Leave Request</string>
+    <string name="HospitalLetterHeader">Hospital Letter Request/PO Clinic Request</string>
+    <string name="visa_letter">Visit Visa Letter Request</string>
+    <string name="medical_expence">Medical Expense \nClaim</string>
+    <string name="change_of_salary_bank">Change of Bank \nAccount Number</string>
+    <string name="FamilyResidenceHeader">Residence Visa Letter Request</string>
+    <string name="AdvanceHousingAllowance">Advance Housing Allowance Request</string>
+
+
+    <!--new forms-->
+
+    <string name="Bank_Account_Update">Bank Account Update</string>
+
+    <string name="Salary_Transfer_Request">Salary Transfer Request</string>
+    <string name="C3_Card_Replacement_Service_Request">C3 Card Replacement Request</string>
+    <string name="C3_Card_Statement_Service_Request">C3 Card Statement Request</string>
+    <string name="C3_Card_Cancellation_Service_Request">C3 Card Cancellation Request</string>
+    <string name="C3_Card_ATM_witch_Claim_Service_Request">C3 Card ATM Switch Claim Request</string>
+
+
+    <string name="HR_Service_Request_For_Leave">Leave Requests</string>
+    <string name="Leave_Application">Leave Application</string>
+    <string name="Leave_Joining">Leave Joining</string>
+
+    <string name="Housing_Allowance">Housing Allowance</string>
+
+    <string name="Transport_Loan_Request">Transport Loan Request</string>
+    <string name="Business_Card_Request">Business Card Request</string>
+
+    <string name="Commitment_Form">Reach Out Commitment Form</string>
+    <string name="Business_Travel_Request">Business Travel Request</string>
+
+
+    <string name="Salary_Request">NOC Requests</string>
+    <string name="Salary_Certificate_Request">Salary Certificate Request</string>
+    <string name="Salary_Transfer_Letter_Request">Salary Transfer Letter Request </string>
+
+    <string name="System_Access_Request">System Access Request</string>
+    <string name="Passport_Release_Request">Passport Release Request</string>
+
+    <string name="Visit_Visa">Visit Visa</string>
+    <string name="Visit_Visa_for_In_laws_children">Visit Visa for In laws, children (Above 18 Years)</string>
+    <string name="Family_Joining_Visa_for_Parents">Family Joining Visa for Parent\'s</string>
+    <string name="Visit_Visa_for_Spouse_Children">Visit Visa for Spouse, Children (Below 18 Years) and Parent\'s</string>
+    <string name="Family_Joining_Visa_for_Spouse_children">Family Joining Visa for Spouse, children (below 18 years)</string>
+
+
+    <!-- *********************************************** -->
+    <string name="tandc">Service Terms &amp; Conditions</string>
+    <string name="Settings">Settings</string>
+    <string name="employment_letter">Employment Letter Request</string>
+    <string name="resonError">Please Type Request for reson</string>
+    <string name="SubmittedMsg">Submitted Successfully</string>
+    <string name="bankName">Name of Bank</string>
+    <string name="IqumaNumber">Iqama Number</string>
+    <string name="drive_company_vehical">Authorization to Drive Company Vehicle</string>
+
+    <string name="Grievance">Grievance</string>
+    <string name="PleaseEnterGrievanceAgainst">Please Enter Grievance Against.</string>
+    <string name="GrievanceAgainst">Grievence Against</string>
+    <string name="grievance_request">Grievance Request</string>
+    <string name="Location">Location</string>
+    <string name="PleaseEnterLocation">Please enter Location.</string>
+
+    <string name="Passport_No">Passport No.</string>
+    <string name="HospitalName">Hospital Name</string>
+    <string name="Reason">Reason</string>
+    <string name="LeaveType">Leave Type</string>
+    <string name="AddOneMore">+ Add 1 More</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+    <string name="DepartureDate">Departure Date</string>
+    <string name="ReturnDate">Return Date</string>
+    <string name="No_matching_record_found">No matching record found.</string>
+    <string name="Relationship">Relationship</string>
+    <string name="DOB">DOB</string>
+    <string name="Nationality">Nationality</string>
+    <string name="SelectNationality"> Select Nationality</string>
+    <string name="request_type">Request Type</string>
+    <string name="name"> Name</string>
+    <string name="EntreName">Entre Name</string>
+    <string name="status">Status:</string>
+    <string name="by">By:</string>
+    <string name="LastupdatedOn">Last updated on:</string>
+    <string name="PostedOn">Posted On:</string>
+    <string name="NameOfClinic">Name of Clinic</string>
+    <string name="PaymentDetails">Payment Details</string>
+    <string name="FCurrent">F Current</string>
+    <string name="SAREquip">SAR Equip</string>
+    <string name="Remarks">Remarks</string>
+    <string name="Pledge"> I pledge to contribute a sum of AED from my salary every month to the Reach Out Fund.</string>
+    <string name="Requested_on">Requested On</string>
+    <string name="NameasperBankRecord">Name as per Bank Record</string>
+    <string name="NameofBank">Name of Bank</string>
+    <string name="barnch">Branch</string>
+    <string name="BankAddress">Bank Address</string>
+    <string name="AccountNumber">Account Number</string>
+    <string name="Track_service_req">Track Service Request</string>
+    <string name="not_able">N/A</string>
+    <string name="stay_updates">Stay Updated</string>
+    <string name="req_service">Request Any Service</string>
+    <string name="Track_service_req_detail">Track Service Request</string>
+
+    <string name="IBAN">IBAN</string>
+    <string name="Swiftcode">Swift code</string>
+    <string name="BankShortCode">Bank Short Code</string>
+    <string name="Currency">Currency</string>
+    <string name="Currency_SAR">SAR</string>
+    <string name="EnterIDNumber">Enter ID Number</string>
+    <string name="SIGNUP">SIGN UP</string>
+    <string name="proceed">Proceed</string>
+    <string name="Forgot_Password">Forgot Password</string>
+    <string name="CHOOSE_PASSWORD">Choose Password</string>
+    <string name="proj">iKonnect Project Meeting</string>
+    <string name="Send_Otp">Send OTP</string>
+    <string name="Resend_OTP">Resend OTP</string>
+    <string name="Verify">Verify</string>
+    <string name="otp_Validation_header">OTP Validation</string>
+    <string name="Enter_OTP_here">Enter OTP here</string>
+    <string name="An_OTP_Code_is_sent_to">An OTP Code is sent to</string>
+    <string name="doc">Tap here to attach documents or Photo</string>
+    <string name="Choose_password_hint">Choose Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="StaffID">Staff ID</string>
+    <string name="StaffID_Hint">Enter Staff ID</string>
+    <string name="password">Password</string>
+    <string name="Iagree">I AGREE</string>
+    <string name="Mobile">Mobile </string>
+    <string name="Email">Email</string>
+    <string name="Grade">Grade</string>
+    <string name="Religion">Religion </string>
+    <string name="nationality">Nationality </string>
+    <string name="startTTypingHere">Start typing here... </string>
+    <string name="WorkCountry">Work Country</string>
+    <string name="Status">Status</string>
+    <string name="Proceed">Proceed</string>
+    <string name="pleaseWait">please wait...</string>
+    <string name="colon">:</string>
+    <string name="comma">,</string>
+
+    <string name="Proceed1">Proceed</string>
+    <string name="save">SAVE</string>
+    <string name="Work_Country">Work Country</string>
+    <string name="Nationality1">Nationality</string>
+    <string name="org">Org. Unit</string>
+    <string name="ps">Personal Subarea and Area</string>
+    <string name="Religion2">Religion</string>
+    <string name="Mobile1">Mobile</string>
+    <string name="email">Email</string>
+    <string name="Grade1">Grade</string>
+
+    <string name="AdvPay_in_month">Adv. Pay in month</string>
+    <string name="IDType">ID Type</string>
+    <string name="NationalID">National ID</string>
+    <string name="IqumaNo">Iqama No.</string>
+    <string name="Detailed_salary">Detailed salary</string>
+    <string name="Monthly_amount">Monthly amount</string>
+    <string name="attechmentHeader">Tap here to attach documnets or Photo</string>
+    <string name="DATE">DATE</string>
+    <string name="DATEmsg">Date Of Birth can not be future Date</string>
+    <string name="currentPassword">Type Current password here..</string>
+    <string name="EnterCurrentPassword">Enter Current Password"</string>
+    <string name="ChooseNewPassword">Choose New Password"</string>
+    <string name="ChooseYourNewPassword">Choose Your New Password"</string>
+    <string name="confirmNewPassword">Confirm New Password</string>
+    <string name="PleaseEnterReason">Please enter reason</string>
+    <string name="HAPreviouslyPaidMsg">Please enter HA Previously paid upto.</string>
+    <string name="AdvancePaymentMonthMsg">Please enter advance payment in month.</string>
+    <string name="FromDateMsg">Please select from date.</string>
+    <string name="ToDateMsg">Please select to date.</string>
+    <string name="InvalidDateMsg">Invalid date To date should greater than from date.</string>
+    <string name="BankRecordMsg">Please enter name as per bank record.</string>
+    <string name="BankNameMsg">Please enter Bank Name</string>
+    <string name="Addressedto">Please enter Addressedto</string>
+    <string name="Purpose">Please enter Purpose</string>
+    <string name="TypeofRequestMsg">Please select type of request.</string>
+    <string name="BranchNameMsg">Please enter branch.</string>
+    <string name="BankAddressMsg">Please enter Bank address.</string>
+    <string name="AccountNumberMsg">Please enter your Account Number</string>
+    <string name="IbaNNumberMsg">Please enter your IBAN</string>
+    <string name="swiftCodeMsg">Please enter Swift code.</string>
+    <string name="bankShortCodeMsg">Please enter bank short code.</string>
+    <string name="currencyMsg">Please enter currency.</string>
+    <string name="deleteUpdateMsg">Do you want to delete/update?</string>
+    <string name="Delete">Delete</string>
+    <string name="Update">Update</string>
+    <string name="reason_for_grievance">Reason For Grievance</string>
+    <string name="StaffIDMsg">Please enter staffID.</string>
+    <string name="Please_enter_new_password">Please enter new password.</string>
+    <string name="Please_enter_current_password">Please enter current password.</string>
+    <string name="Please_re_enter_password">Please re-enter password.</string>
+    <string name="New_password_and_confirm_passwordMsg">New password and confirm password should be same.</string>
+    <string name="Password_changed_successfully">Password changed successfully.</string>
+    <string name="Please_enterSubject">Please enter Subject.</string>
+    <string name="Please_enterMessage">Please enter Message.</string>
+    <string name="Please_enter_passport_number">Please enter passport number.</string>
+    <string name="Please_select_Type_of_Request">Please select Type of Request.</string>
+    <string name="Please_Enter_Saudi_Embassy_Consulate_to_issue_visa">Please Enter Saudi Embassy Consulate to issue visa.</string>
+    <string name="PleaseEnterHospitalName">Please Enter Hospital Name.</string>
+    <string name="PleaseEnterHospitalLocation">Please Enter Hospital Location.</string>
+    <string name="PleaseEnterPassword">Please enter Password.</string>
+    <string name="Please_enter_clinic_name">Please enter clinic name</string>
+    <string name="Please_entere_valid_OTP">Please entere valid OTP.</string>
+    <string name="Please_enter_Confirm_Password">Please enter Confirm Password.</string>
+    <string name="Please_Enter_Iquma_Number">Please Enter Iqama Number.</string>
+    <string name="Unable_to_process">Unable to process. Please try later.</string>
+    <string name="current_bank_name">Please enter the Current Bank Name</string>
+    <string name="current_iban_no">Please enter the Current IBAN Number</string>
+    <string name="salary_trans_to_same_bank">Please enter the Click on any one button</string>
+    <string name="enter_bank_name">Please enter the Bank name</string>
+    <string name="iban_no">Please enter IBAN Number</string>
+    <string name="total_loan_taken_amt">Please enter the Total Loan Taken</string>
+    <string name="loan_applied_on">Please enter the Loan Applied On</string>
+    <string name="outstanding_asofday">Please enter the outstanding As of date</string>
+    <string name="last_instal_due">Please enter the Last Installment Due</string>
+    <string name="monthly_instal">Please enter the Monthly Installment</string>
+    <string name="purpose_of_loan_alert">Please enter the Purpose of Loan</string>
+    <string name="total_loan_amt_req">Please enter the Total Loan Amount required</string>
+    <string name="outstanding_amt_alert">Please enter the Outstanding Amount</string>
+    <string name="decla_confirm">Please select the confirm declaration</string>
+    <string name="have_existing_loans">Please select the have existing loans</string>
+    <string name="decla_approval">Please select the Approval declaration</string>
+    <string name="decla_request">Please select the Request declaration</string>
+    <string name="purpose_of_release">Please select Purpose of Passport Release</string>
+    <string name="access_req">Please select any option</string>
+    <string name="start_date_alert">Please select the Start date</string>
+    <string name="end_date_alert">Please select the End date</string>
+    <string name="Tracking_Details">Tracking Details</string>
+    <string name="contribution_amt_alert">Please enter the Contribution Amount</string>
+
+    <string name="name_as_passport">Please Enter Name as given in Passport</string>
+    <string name="father_name_alert">Please enter Father\'s Name</string>
+    <string name="mother_name_alert">Please enter the Mother\'s Name</string>
+    <string name="nationality_alert">Please enter Nationality</string>
+    <string name="dob">Please Select Date of Birth</string>
+    <string name="place_of_birth_alert">Please enter Place of Birth</string>
+    <string name="passport_no">Please enter Passport Number</string>
+    <string name="place_of_issue_alert">Please enter Place of Issue</string>
+    <string name="date_of_issue_alert">Please Select Date of Issue</string>
+    <string name="date_of_expiry_alert">Please Select Date of Expiry</string>
+    <string name="profession">Please enter the Profession as per passport</string>
+    <string name="date_of_last_entry">Please enter Date of last entry to Oman</string>
+    <string name="addr_abroad">Please enter Address Abroad</string>
+    <string name="r_ship_with_appli">Please Select Relationship with the applicant</string>
+    <string name="reason_request">Please enter the Reason for the request</string>
+    <string name="any_bank_loan">Please enter Select Any outstanding Bank Loan </string>
+    <string name="any_hr_advance">Please enter Select Any outstanding HR Advance</string>
+    <string name="any_trans_advance">Please enter Any outstanding Transport Advance</string>
+    <string name="credit_cards_alert">Please select Any option for Credit Card</string>
+    <string name="select_retain_type">Please select any one option for captured/Retained by ATM</string>
+
+    <string name="staff_no">Please enter the Staff No.</string>
+    <string name="staff_name">Please enter the Staff Name</string>
+    <string name="department">Please enter the Department</string>
+    <string name="brand_new_or_pre">Please select any option for Brand</string>
+    <string name="vehicle_make_alesrt">Please enter  Vehicle Make</string>
+    <string name="vehicle_model_alert">Please enter the Vehicle Model(Year)</string>
+    <string name="vehicle_model_alert1">You cannot apply Transport Loan for vechile older than 5 years</string>
+    <string name="odometer_read">Please enter Odometer Reading</string>
+    <string name="odometer_read_alert">Odometer Reading should be less than 100,000 KM</string>
+    <string name="chassis_no_alert">Please enter Chassis No.</string>
+    <string name="engine_no_alert">Please enter Engine No.</string>
+
+    <string-array name="countryName">
+        <item>UAE</item>
+        <item>OMAN</item>
+        <item>KUWAIT</item>
+        <item>QATAR</item>
+        <item>BAHRAIN</item>
+        <item>Saudi Arabia</item>
+        <item>UAE</item>
+        <item>OMAN</item>
+        <item>KUWAIT</item>
+        <item>QATAR</item>
+        <item>BAHRAIN</item>
+        <item>Saudi Arabia</item>
+    </string-array>
+    <string-array name="currencyCode">
+        <item> SAR</item>
+        <item> AED</item>
+        <item> OMR</item>
+        <item> KWD</item>
+        <item> QAR</item>
+        <item> BHD</item>
+        <item> SAR</item>
+        <item> AED</item>
+        <item> OMR</item>
+        <item> KWD</item>
+        <item> QAR</item>
+        <item> BHD</item>
+    </string-array>
+    <string-array name="relation">
+        <item>Father </item>
+        <item>Mother </item>
+        <item>Son </item>
+        <item>Daughter </item>
+        <item>Spouse</item>
+
+    </string-array>
+    <string-array name="relation1">
+        <item>Father </item>
+        <item>Mother </item>
+        <item>Son </item>
+        <item>Daughter </item>
+        <item>Spouse</item>
+
+    </string-array>
+    <string-array name="Nationality">
+        <item>Indian </item>
+        <item>American </item>
+        <item>Pakisthani </item>
+        <item>Bangaldesi </item>
+    </string-array>
+    <string-array name="ReuestTypes">
+        <item>Card Re-issue </item>
+        <item>Pin Reissue </item>
+        <item>Card &amp; Pin Reissue </item>
+    </string-array>
+    <string-array name="IDType">
+        <item>Passport No.</item>
+        <item>National ID</item>
+        <item>Iqama ID</item>
+    </string-array>
+    <string-array name="IDTypeEn">
+        <item>Passport No.</item>
+        <item>National ID</item>
+        <item>Iqama ID</item>
+    </string-array>
+    <string name="passportNumber">Passport No</string>
+    <string name="wel">WELCOME</string>
+    <string name="welcome">Welcome to iKonnect - easy app to make your work easier</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="subject">Subject</string>
+    <string name="Message">Message</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="start_typeing">Start Typing Here...</string>
+    <string name="familydetailalert">Please Enter all the detail of the family</string>
+    <string name="medicaldetailalert">Please Enter all the detail of the Medical Expense</string>
+    <string name="EnterNameMsg">Please Enter Name</string>
+    <string name="RelationshipMsg">Please Select Relationship</string>
+    <string name="DOBMsg">Please Select DOB</string>
+    <string name="NationalityMsg">Please Select Nationality</string>
+    <string name="IDNoMsg">Please Enter ID Number</string>
+    <string name="AddMsg"><u>+ Add 1 More</u></string>
+
+
+    <string name="ac">1. Acceptance of terms &amp; conditions</string>
+    <string name="detail1">If you’re Alseer Employee, you are most welcome to Almarai HR iKonnect app. Whether you have an existing account in the app (user) or a new user, your access to the app is governed by the following terms &amp; conditions. The app of Almarai Company maintains the right to revise service conditions from time to time without prior notice or approval of the user. You may review the updated version of the service conditions from time to time on this page.</string>
+    <string name="ac1">2. Service description</string>
+    <string name="detail2">User Registration enables employees of Alseer to register in the iKonnect in order to be able to benefit from a list of HR Services available. This process is implemented in order to give the employees opportunity to use those services themselves without visiting their HR offices in person. By doing this, user will have a unique username (their staff number) &amp; password which will be linked only to their SAP profile.</string>
+    <string name="ac2">The process consists of 2 steps:</string>
+    <string name="h1">Registration Request</string>
+    <string name="detail3">where user enters his/her staff number, a valid Alseer email address, &amp; a valid mobile number to be contacted on (must be registered in SAP already).</string>
+    <string name="h2">Request Verification</string>
+    <string name="detail4">where the user is asked to enter a code number after completing step one successfully.\n \n If you did not receive a code within an hour it means your personal information is not updated in SAP, you need to physically visit your HR. (You can re-register your account after your information are updated successfully in SAP). By completing updating of your information, you can have access to the iKonnect services provided by Alseer.
+                            You shall maintain your portal password &amp; account details. You shall be solely responsible for all the activities conducted using your account &amp; password. You should acknowledge that you agree to the following:\n
+                            1. Immediately report to the administrations any unauthorized use of your account or/&amp; password.\n
+                            2. You should ensure registration of exit from iKonnect each time you use the app. eConnect will not be responsible for any loss or damage that may occur by reason of violation of the provisions of these two paragraphs.\n
+                            3. Ensure you provide authentic, correct, complete &amp; updated information about yourself according to the registration format requirements.</string>
+    <string name="ac10">4.Termination &amp; Cancellation</string>
+    <string name="detail5">If service is terminated it will be with immediate effect. Following termination, you cannot access your account or associated services. iKonnect shall assume no accountability for such action. However, you can browse the general information pages on the app like any other employee.
+                        You shall acknowledge &amp; accept that under certain circumstances, iKonnect may, without prior notice, immediately terminate your subscription to the services it provides. Reasons for termination may include, but are not limited to:\n
+                        1. Total or partial violation of service terms &amp; conditions\n
+                        2. Judicial orders or dem&amp;s from other Alseer authorities\n
+                        3. In response to a personal request from you\n
+                        4. Cessation or failure to update particulars of the service of parts related thereto\n
+                        5. Unexpected technical failure\n
+                        Termination of your subscription to iKonnect app shall entail:\n
+                        1. Termination of access to the service &amp; its sub-components.\n
+                        2. Deletion of the password &amp; all your details as well as existing files of your account.\n
+                        3. Deny future access to service. It is understood that iKonnect app will not be liable to any accountability from you or from any third party for justified termination of the account.</string>
+    <string name="ac4">Ownership of iKonnect account &amp; associated security procedure.</string>
+    <string name="detail6">You shall maintain the security of your account &amp; shall be solely responsible of all activities performed using your account or any other actions to establish access to the portal.
+                        You shall undertake to immediately report to iKonnect any unauthorized use of your account or any security violation thereto. eConnect will not assume any responsibility for loss or damage resulting from your failure to comply with the security condition.
+                        You shall also be aware that you acknowledge full responsibility for using your user name &amp; password &amp; necessary st&amp;ards to maintain them, &amp; should not disclose the password to any one or any other party.
+                        You shall be aware &amp; agree that, under no circumstances, iKonnect will be responsible in any way for any action or deletion performed by the user or the portal system administrators that may result in any damage.</string>
+
+    <string name="please_attach1">Please attach Birth Certificate of all dependents, Passport, marriage Certificate, University Diploma and/or college Certificate</string>
+    <string name="please_attach2">Please attach documents or photo</string>
+    <string name="please_attach3">Please attach documents or photo</string>
+    <string name="please_attach4">Please attach documents or photo</string>
+    <string name="please_attach5">Please attach documents or photo</string>
+    <string name="please_attach6">Please attach Copy of IPAN</string>
+    <string name="please_attach7">Please attach documents or photo</string>
+    <string name="please_attach8">Please attach documents or photo</string>
+    <string name="please_attach9">Copy of ID Card or Iqama</string>
+    <string name="please_attach10">Please attach documents or photo</string>
+    <string name="ReasonForRequest">Reason For Request</string>
+    <string name="SaudiEmbassyConsulate_to_issue_visa">Saudi Embassy Consulate to issue visa</string>
+    <string name="FAMILY_DETAILS">FAMILY DETAILS</string>
+    <string name="HA_Previously_paid_upto">HA Previously paid upto</string>
+    <string name="OneYear">One Year</string>
+    <string name="SixMonths">Six Months</string>
+    <string name="OtherPeriod">Other Period</string>
+    <string name="Fragment_Active">Active</string>
+    <string name="Fragment_Closed">Closed</string>
+    <string name="ID_Type">ID Type</string>
+
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+
+    <!-- this all string is relaeted to all service response newly added rahul on 15/june/2017 -->
+    <string name="LoginResponceMessage">Login successful.</string>
+    <string name="OTP_sent_successfully">OTP sent successfully.</string>
+    <string name="OTP_validated_successfully">OTP validated successfully.</string>
+    <string name="Registered_successfully">Registered successfully.</string>
+
+
+    <string name="Take_Photo">Take Photo</string>
+    <string name="Choose_from_Gallery">Choose from Gallery</string>
+    <string name="Documents">Documents</string>
+    <string name="Cancel_small">Cancel</string>
+    <string name="Please_enter">Please enter</string>
+    <string name="PleaseEnterIqamaNumber">Please Enter Iqama Number.</string>
+    <string name="RejectReason">Reject Reason</string>
+    <string name="HoldReason">Reason for On Hold</string>
+    <string name="contact_us">Employee Relations team will receive your message and contact you as soon as possible.</string>
+
+    <!--PaySlip Activity String Values newly added at 20 june 2017 after release arabic version also-->
+
+
+    <string name="emp_detail">Employee Details</string>
+    <string name="emp_name">Name</string>
+    <string name="division">Division</string>
+    <string name="position">Position</string>
+    <string name="location">Location</string>
+    <string name="nation">Nationality</string>
+    <string name="period">For Period</string>
+    <string name="bank">Bank Name</string>
+    <string name="payroll">Payroll Area</string>
+    <string name="date_prnt">Date Printed</string>
+    <string name="id_expir">Nat/Res ID Expiry</string>
+    <string name="dept">Department</string>
+    <string name="persn_no">Pers. no.</string>
+    <string name="pay_mode">Payment Mode</string>
+    <string name="pay_date">Payment Date</string>
+    <string name="pay_curr">Payment Currency</string>
+    <string name="passport_expir">Passport Expiry</string>
+    <string name="earning">Earnings</string>
+    <string name="number">No.</string>
+    <string name="unit">Unit</string>
+    <string name="rate">Rate</string>
+    <string name="arrear">Arrears</string>
+    <string name="amount">Amt</string>
+    <string name="bss">Basic Salary Scale</string>
+    <string name="food_allownc">Food Allowance</string>
+    <string name="overtime">Normal Overtime</string>
+    <string name="tot_earning">Total Earnings</string>
+    <string name="deduction">Deductions</string>
+    <string name="tot_deduction">Total Deductions</string>
+    <string name="contribution">Contributions</string>
+    <string name="tot_contribution">Total Contributions</string>
+    <string name="net_pay">Net Pay</string>
+    <string name="absence_detail">Absence Details</string>
+    <string name="absence_type">Absence Type</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="days">Days</string>
+    <string name="payment_details">Year to-date Payment Details</string>
+    <string name="description">Description</string>
+    <string name="curr_period">Current Period</string>
+    <string name="ytd">YTD</string>
+    <string name="tgp">Total Gross Payment</string>
+    <string name="tgd">Total Gross Deduction</string>
+    <string name="Employee_Details">Employee Details</string>
+    <string name="Total_Net_Diff">Total Net Diff</string>
+
+
+    <string name="difference_fom_previous_month">Difference fom previous month</string>
+    <string name="failed">Failed to connect to server</string>
+
+    <!--Added by Client-->
+    <string name="no_Groups_Found">No Group Found</string>
+    <string name="Pending">Pending</string>
+    <string name="Rejected">Rejected</string>
+    <string name="read_to_collect_from_your_HR_representative">Ready to collect from your HR representative</string>
+    <string name="Approved_and_will_be_send_to_your_location">Approved and will be send to your location</string>
+    <string name="Work_In_Progress">Work In Progress</string>
+    <string name="approved_and_we_will_send_to_your_location">Approved and we will send to your location</string>
+    <string name="proc_req">processing request</string>
+    <string name="rejected">Rejected</string>
+    <string name="read_hr">ready to collect from your HR representative</string>
+    <string name="approved">Approved</string>
+    <string name="attachment">Attachment</string>
+    <string name="work_in_progress">Work In progress</string>
+
+
+    <string name="departement">Department</string>
+    <string name="bank1">Bank</string>
+    <string name="for_p">For Period</string>
+    <string name="pay_dat">Payment Date</string>
+    <string name="pay_cu">Payment Currency</string>
+    <string name="pay_are">Payroll Area</string>
+    <string name="net">Net/Res ID expiry</string>
+    <string name="pass_ex">Passport Expiry</string>
+    <string name="bas_sal">Basic Salary Scale</string>
+    <string name="nor_over">Normal Overtime</string>
+    <string name="food_all">Food Allowances</string>
+    <string name="total">Total</string>
+    <string name="deduction1">Deduction</string>
+    <string name="net_pay1">Net Pay</string>
+    <string name="abs_detail">Absent Details</string>
+    <string name="abs_type">Absent Type</string>
+    <string name="st_dt">Start Date</string>
+    <string name="end_dt">End Date</string>
+    <string name="tot_days">Total Days</string>
+
+    <string name="year_to_date">Year to Date Payment Detail</string>
+    <string name="desc">Description</string>
+    <string name="curr_per">Current period</string>
+    <string name="YTD">YTD</string>
+    <string name="total_gross_pay">Total Gross Payment</string>
+    <string name="total_gross_ded">Total Gross Deduction</string>
+    <string name="diff_from_prev">Diff from previous Mnth</string>
+    <string name="total_net_pay">Total Net payment</string>
+    <string name="starting_from">Starting From</string>
+    <string name="ending_on">Ending On</string>
+    <string name="attendance">Attendence</string>
+    <string name="organiser">Organiser</string>
+    <string name="warning1">No Event found.</string>
+
+    <string name="planned">Planned</string>
+    <string name="Approved">Approved</string>
+    <string name="Cancelled">Cancelled</string>
+    <string name="Tentative">Tentative</string>
+    <string name="Confirmed">Confirmed</string>
+    <string name="no_data_found">No data found.</string>
+    <string name="grp_msg">GROUP MESSAGE</string>
+    <string name="per_msg">PERSONALIZED MESSAGE</string>
+
+    <string name="sel_lang">Select Language</string>
+    <string name="downaloding">Downloading...</string>
+    <string name="cu">Also you can contact us on:</string>
+    <string name="send">Send</string>
+    <string name="collect_HR">Approved and ready to collect from your HR representative</string>
+    <string name="user_login">You have logged in from a new device. You will be logged out from this device.</string>
+    <string name="profile_pic">Profile Picture changes successfully.</string>
+    <string name="update">Update</string>
+    <string name="max">maximum limit of attachment reached</string>
+    <string name="destination">Destination(s)</string>
+    <string name="purpose_of_travel">Purpose of Travel</string>
+    <string name="contact_number_during_bussiness_travel">Contact Number During Bussiness Travel</string>
+    <string name="ticket_required">Ticket Required</string>
+    <string name="visa_required">Visa Required</string>
+    <string name="hotel_accomidation">Hotel Accommodation</string>
+    <string name="cost_debit_to">Cost Debit to:</string>
+    <string name="advance_request">Advance Request</string>
+    <string name="joining_date">Joining Date</string>
+    <string name="type_of_leave">Type of Leave</string>
+    <string name="vacation">Vacation</string>
+    <string name="emergency_compensate">Emergency/Compensate</string>
+    <string name="other">Other</string>
+    <string name="please_state_the_reason">Please state the reason</string>
+    <string name="leave_date_starting">Leave Start Date</string>
+    <string name="do_you_want_leave_salary_in_advance">Would you like to request Salary Advance? </string>
+    <string name="contact_while_leaving">Contact number while on leave</string>
+    <string name="purpose_of_passport_release">Purpose of passport release</string>
+
+
+    <!---newly added-->
+
+    <string name="bank_account_update">Bank Account Update</string>
+    <string name="bussiness_card">Business Card Request</string>
+    <string name="bussiness_travel_advice">Business Travel Request</string>
+    <string name="commitemt_form">Commitment Form</string>
+    <string name="housing_allowance">Housing Allowance Advance</string>
+    <string name="leave_joining">Leave Joining</string>
+    <string name="hr_service_req">HR Service Request for Leave</string>
+    <string name="passport_release">Passport Release Request</string>
+    <string name="salary_certificate">Salary Request</string>
+    <string name="system_acsess_request">System Access Request</string>
+    <string name="transport_loan_request">Transport Loan Request</string>
+    <string name="visa_visit">Visit Visa</string>
+
+
+    /*********************************iKonnect***********************************/
+    <string name="contribution_amt">Contribution Amount</string>
+    <string name="company_details">Company Details</string>
+    <string name="EnterNameHere">Enter name here</string>
+    <string name="branch_id">Branch ID</string>
+    <string name="authorized_person">Authorized Person</string>
+    <string name="person_name">Person Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="c3_card_member_details">C3 Card Member Details</string>
+    <string name="card_member_full_name">Card Member Full Name</string>
+    <string name="card_holder_mobile_num">Card Holder\'s Mobile Number</string>
+    <string name="mobile_num">Mobile Number</string>
+    <string name="employee_id_no">Employee ID No</string>
+    <string name="c3_payroll_card_number">C3 Payroll Card Number</string>
+    <string name="addressed_to">Addressed to</string>
+    <string name="purpose">Purpose</string>
+    <string name="other_instructions">Other Instructions</string>
+    <string name="sap">SAP</string>
+    <string name="network">System Network</string>
+    <string name="internet">Internet</string>
+    <string name="extension">Telephone Extension</string>
+    <string name="remarks">Remarks</string>
+    <string name="vehicle_make">Vehicle Make(e.g. Toyota Yaris)</string>
+    <string name="vehicle_model">Vehicle Model(Year)</string>
+    <string name="chassis_no">Chassis No.</string>
+    <string name="engine_no">Engine No.</string>
+    <string name="odometer_reading">Odometer Reading (KM)</string>
+    <string name="brand_new_pre_owned">Brand New or Pre-owned</string>
+    <string name="brand_new">New</string>
+    <string name="pre_owned">Pre-owned</string>
+    <string name="do_you_have_valid_licence">Do you have a valid UAE/Oman Driving Licence?</string>
+    <string name="select_type">Select Type</string>
+    <string name="visit_visa_type">Visit Visa for Spouse, children(below 18 years) and parents/s</string>
+    <string name="name_as_given">Name as given in Passport</string>
+    <string name="father_name">Father\'s Name</string>
+    <string name="mother_name">Mother\'s Name</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="place_of_birth">Place of Birth</string>
+    <string name="passport_number">Passport Number</string>
+    <string name="place_of_issue">Place of Issue</string>
+    <string name="date_of_issue">Date of Issue</string>
+    <string name="date_of_expiry">Date of Expiry</string>
+    <string name="reason_for_req">Reason for the request</string>
+    <string name="professoin">Professoin as per passport</string>
+    <string name="date_of_last_entry_to_Omen">Date of last entry to Oman</string>
+    <string name="outstanding_bank_Loan">Any outstanding Bank Loan</string>
+    <string name="address_abroad">Address Abroad</string>
+    <string name="relationship_with_applicant">Relationship with the applicant</string>
+    <string name="outstanding_hr_advance">Any outstanding HR Advance</string>
+    <string name="outstanding_transport_advance">Any outstanding Transport Advance</string>
+    <string name="credit_cards">Credit Cards</string>
+    <string name="outstanding_new">New</string>
+    <string name="documents_avail">Documents Available</string>
+    <string name="tracking_details">Tracking Details</string>
+    <string name="salary_transfer">Currently, your salary is being transferred to (Bank Name) &amp; (IBAN Number)</string>
+    <string name="salary_transfer_letter">Do you want the Salary Transfer Letter addressed to the same Bank? </string>
+    <string name="do_you_bank_loan">Do you have any existing Bank loans?</string>
+    <string name="purpose_of_loan">Purpose of Loan</string>
+    <string name="total_loan_Amt_req">Total Loan Amount required</string>
+    <string name="monthly_installment">Monthly Installment (max 50% of Basic Salary)</string>
+    <string name="details_of_bank_loan">Details of the proposed bank loan </string>
+    <string name="total_loan_taken">Total Loan Taken</string>
+    <string name="loan_Appl_on">Loan Applied on</string>
+    <string name="outstanding_date">Outstanding as of Date</string>
+    <string name="last_installment">Last installment due</string>
+    <string name="monthly_instlment">Monthly installment</string>
+    <string name="undertaking">Undertaking - No Advance declaration</string>
+    <string name="declaration3">In the event of my loan request being rejected, I confirm that I will return the letter issued.</string>
+    <string name="declaration1">I, hereby confirm that the details provided in this form are true and correct.</string>
+    <string name="declaration2">In the event of the approval of my loan, I acknowledge that I will no longer be eligible to apply for any HR advances from the company until I provide a clearance letter from the bank.</string>
+
+    /************************* Menu ***********************************************************/
+    <string name="track_my_req">Track My Request</string>
+    <string name="pay_slip">Pay Slips</string>
+    <string name="my_fav">My Favourites</string>
+    <string name="how_can_we_help">How can we help you?</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    /************************* Visa Types ********************************************/
+    <string name="visa_type1">Visit Visa for Spouse, children (below 18 years) and Parent\'s</string>
+    <string name="visa_type2">Visit Visa for In laws, children (above 18 years)</string>
+    <string name="visa_type3">Family Joining Visa for Spouse, children (below 18 years)</string>
+    <string name="visa_type4">Family Joining Visa for Parent\'s</string>
+    <string name="dont_have_an_account">Don\'t have an Account ?</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="withdraw_details">Withdrawal Details</string>
+    <string name="transaction_date">Transaction Date</string>
+    <string name="transaction_time">Transaction Time</string>
+    <string name="amount_withdraw">Amount Withdrawn</string>
+    <string name="amount_recived">Amount Received</string>
+    <string name="amount_disputed">Amount Disputed</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="reason_for_card_replacement">Please select reason for card replacement</string>
+    <string name="captured_retained_by_atm">Reason for Card Replacement</string>
+    <string name="name_of_bank">Bank Name</string>
+    <string name="bank_branch">Bank Branch</string>
+    <string name="visa_req">Visa Requests</string>
+    <string name="account_no">Account No.</string>
+    <string name="signature">Signature</string>
+    <string name="card_number">Card Number</string>
+    <string name="enter_card_number">Enter Card Number</string>
+    <string name="card_member_mobile_number">Card member Mobile Number</string>
+    <string name="atm_location">ATM Location</string>
+    <string name="employee_id_number">Employee ID No</string>
+    <string name="company_name">Company Name</string>
+    <string name="outstanding_amt">Outstanding Amount</string>
+    <string name="credit_limit">Credit Limit</string>
+    <string name="do_you_have_credit_card">Do you have any credit card?</string>
+
+    <string-array name="visit_visa">
+        <item>Visit Visa for Spouse, children (below 18 years) and Parent\'s </item>
+        <item>Visit Visa for In laws, children (above 18 years)</item>
+        <item>Family Joining Visa for Spouse, children (below 18 years)</item>
+        <item>Family Joining Visa for Parent\'s</item>
+    </string-array>
+    <string-array name="bank_account">
+        <item>Salary Transfer Request</item>
+        <item>C3 Card ATM Switch Claim Service Request</item>
+        <item>C3 Card Replacement Service Request</item>
+        <item>C3 Card Statement Service Request</item>
+        <item>C3 Card Cancelation Service Request</item>
+    </string-array>
+
+
+    <string-array name="leave_request">
+        <item>Leave Application</item>
+        <item>Leave Joining</item>
+    </string-array>
+
+
+    <string-array name="salary_request">
+        <item>Salary Certificate Request Form</item>
+        <item>Salary Transfer Letter Request</item>
+    </string-array>
+
+
+    <string-array name="cities">
+        <item>city1</item>
+        <item>city2</item>
+        <item>city3</item>
+        <item>city4</item>
+        <item>city5</item>
+
+    </string-array>
+
+
+    <string name="lost_card_prompt">choose</string>
+    <string-array name="lost_card">
+        <item>Lost Card/Stolen Card</item>
+        <item>Damaged Card</item>
+    </string-array>
+
+    <string name="lost_card">Lost Card/Stolen Card</string>
+    <string name="damaged_card">Damaged Card</string>
+    <string name="capture_retained_by">Captured/Retained by ATM</string>
+
+    <string name="select_any_one">Select any one</string>
+
+    <string name="card_statement">Choose Statement</string>
+    <string name="city">City</string>
+    <string name="sector_required">Sector</string>
+    <string name="resumed_work">Resumed Work</string>
+    <string name="total_with_colon">Total :</string>
+    <string name="any_other_requirement">Any other requirements</string>
+    <string name="functional_area">Functional Area</string>
+
+
+    <string name="empty_comapny_name">Please company name.</string>
+    <string name="comapny_details">Please company name.</string>
+    <string name="empty_branch_id">Please enter branch id.</string>
+    <string name="empty_authorized">Please enter  authorized person name.</string>
+    <string name="empty_card_holder_mobile_number">Please enter card holder mobile number.</string>
+    <string name="empty_signature">Please enter signature.</string>
+    <string name="please_select_the_start_date">Please select the start date.</string>
+    <string name="please_select_the_end_date">Please select the end date.</string>
+
+
+    <string-array name="card_statement">
+        <item>Hard Copy (C3 Letterhead + Company Stamp)</item>
+        <item>Soft Copy (Via email – Without C3 Letterhead and Company Stamp)  </item>
+    </string-array>
+
+    <string name="hardcopy">Hard Copy (C3 Letterhead + Company Stamp)</string>
+    <string name="softcopy">Soft Copy (Via email – Without C3 Letterhead and Company Stamp)</string>
+    <string name="copy_type">Type of Copy</string>
+    <string name="leave_end_starting">Leave End Date</string>
+
+
+    <string-array name="passport_release_purpose">
+        <item>Vacation</item>
+        <item>Passport Renewal</item>
+        <item>Bank Related</item>
+        <item>Foreign Visa Application</item>
+        <item> Family Visa New/Renewal</item>
+        <item> Business Travel</item>
+        <item>Others</item>
+    </string-array>
+
+    <array name="track">
+        <item>Active</item>
+        <item>Close</item>
+    </array>
+
+
+    <string name="card_cancellation">C3 Card Cancelation Request</string>
+    <string name="action_settings">Setting</string>
+
+
+    <string name="title_activity_free_user_new">Free New User</string>
+
+
+    <!-- Sucessfull messages after form submissition -->
+
+    <string name="salary_transfer_request_submit_message">salary transfer request</string>
+    <string name="C3_Card_Replacement_Service_Request_submit_message">C3 Card Replacement Service Request</string>
+    <string name="C3_Card_Statement_Service_Request_submit_message">C3 Card Statement Service Request</string>
+    <string name="C3_Card_Cancellation_Service_Request_submit_message">C3 Card Cancellation Service Request</string>
+    <string name="C3_Card_ATM_witch_Claim_Service_Request_submit_message">C3 Card ATM Switch Claim Service Request</string>
+
+    <string name="Leave_Application_submit_message">Submitted to Reporting Manager Approval</string>
+    <string name="Leave_Joining_submit_message">Submitted to Reporting Manager for approval</string>
+
+    <string name="Housing_Allowance_submit_message">Submitted for Approval</string>
+
+    <string name="Transport_Loan_Request_submit_message">Submitted to Reporting Manager for Approval</string>
+    <string name="Business_Card_Request_submit_message">Business Card Request</string>
+
+    <string name="Commitment_Form_submit_message">Submitted for Processing</string>
+    <string name="Business_Travel_Request_submit_message">Submitted to Division Manager/GM for approval</string>
+
+
+    <string name="Salary_Certificate_Request_submit_message">Submitted for Approval to Reporting Manager</string>
+    <string name="Salary_Transfer_Letter_Request_submit_message">Submitted to the Reporting Manager for approval</string>
+
+    <string name="System_Access_Request_submit_message">Submitted for Approval to the Division Head/GM</string>
+    <string name="Passport_Release_Request_submit_message">Submitted for Approval to Reporting Manager</string>
+
+
+    <string name="visit_and_family_visa_submit_message">Submitted for Reporting Manager &amp; BDM Approval</string>
+    <string name="select_month">Select month</string>
+    <string name="reason_for_cancellation">Reason for Cancellation</string>
+    <string name="call_salary_transfer_form">callSalaryTransferRequest</string>
+    <string name="date_of_joining">Date of Joining</string>
+    <string name="band">Band</string>
+    <!--<string name="salary_transfer_letter_header"><![CDATA[\Currently, your salary is being transferred to (Bank name), (Account No.) & (IBAN)]]></string>-->
+    <string name="salary_transfer_letter_header">Currently, your salary is being transferred to (Bank name), (Account No.) &amp; (IBAN)</string>
+
+    <string name="select_model">Select Vehicle Model (Year)</string>
+
+</resources>
+

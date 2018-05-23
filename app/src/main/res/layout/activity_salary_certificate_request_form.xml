@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10"
+
+    tools:context="com.winit.iKonnect.ui.activities.SalaryCertificateRequestForm">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_11"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="Addressed to (Bank/Embassy/Entity)"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <EditText
+        android:id="@+id/etAddressedto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:textColor="@color/text_light"
+        android:hint="Addressed to (Bank/Embassy/Entity)"
+        android:inputType="text"
+        android:textSize="@dimen/text_size_very_small_12"
+        android:scrollbars = "vertical"/>
+
+    <TextView
+        android:id="@+id/tvPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="@string/purpose"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <EditText
+        android:id="@+id/etPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/common_data_input_field"
+        android:gravity="left"
+        android:hint="@string/startTTypingHere"
+        android:inputType="textCapSentences|textMultiLine"
+        android:paddingLeft="@dimen/margin_3"
+        android:paddingTop="@dimen/margin_3"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/text_size_very_small_12"
+        android:scrollbars = "vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="@string/other_instructions"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <EditText
+        android:id="@+id/etOther_Instru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/common_data_input_field"
+        android:gravity="left"
+        android:hint="@string/startTTypingHere"
+        android:inputType="textCapSentences|textMultiLine"
+        android:paddingLeft="@dimen/margin_3"
+        android:paddingTop="@dimen/margin_3"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/text_size_very_small_12"
+        android:scrollbars = "vertical"/>
+</LinearLayout>

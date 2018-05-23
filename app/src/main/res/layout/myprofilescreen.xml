@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llmyprofile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/profile"/>
+
+        <TextView
+            android:id="@+id/tvmyprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="@string/my_profile"
+            android:textSize="@dimen/text_size_small"></TextView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/llmypaylips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/payslips"/>
+
+        <TextView
+            android:id="@+id/tvmypayslip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="@string/pay_Slip"
+
+            android:textSize="@dimen/text_size_small"></TextView>
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+    <LinearLayout
+        android:id="@+id/llEmployeeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/payslips"/>
+
+        <TextView
+            android:id="@+id/tvEmployeeList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="Employee List"
+
+            android:textSize="@dimen/text_size_small"></TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+    <LinearLayout
+        android:id="@+id/llmyfav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/favourates"/>
+
+        <TextView
+            android:id="@+id/tvmyfav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="@string/my_favourate"
+
+            android:textSize="@dimen/text_size_small"></TextView>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/llmydocuments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:src="@drawable/payslips"/>
+
+        <TextView
+            android:id="@+id/tvmydocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_10"
+            android:gravity="center_vertical"
+            android:padding="@dimen/margin_10"
+            android:text="My Documents"
+
+            android:textSize="@dimen/text_size_small"></TextView>
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+
+    <!--
+        <LinearLayout
+            android:id="@+id/llmytrackservice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:src="@drawable/tracking"/>
+
+            <TextView
+                android:id="@+id/tvmytrackservice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="0.9"
+                android:gravity="center_vertical"
+                android:padding="@dimen/margin_10"
+                android:text="@string/track_service"
+                android:textSize="@dimen/text_size_small"></TextView>
+
+            <include
+                layout="@layout/menu_counters"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    -->
+
+
+    <!--  <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="@color/gray"
+          />-->
+
+</LinearLayout>

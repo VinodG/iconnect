@@ -1,0 +1,673 @@
+<resources>
+
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="app_name">تواصل الموظفين </string>
+    <string name="app_version">V2.0</string>
+    <string name="gcm_defaultSenderId">421697084915</string>
+
+    <!--Splash-->
+    <string name="next">التالي </string>
+    <string name="skip">التالي</string>
+    <string name="start">البدء</string>
+
+    <string name="slide_1_title">مرحبا الغذاء!</string>
+    <string name="slide_1_desc">أسهل طريقة لطلب الطعام من مطعم المفضلة لديك!</string>
+    <string name="emp_search_hint">البحث حسب الاسم أو رقم الموظفين</string>
+
+    <string name="slide_2_title">تذاكر الفيلم</string>
+    <string name="slide_2_desc">كتاب تذاكر السينما لعائلتك وأصدقائك!</string>
+
+    <string name="slide_3_title">خصومات كبيرة</string>
+    <string name="slide_3_desc">أفضل خصومات على كل خدمة واحدة نقدمها!</string>
+
+    <string name="slide_4_title">السفر حول العالم</string>
+    <string name="slide_4_desc">تذاكر السفر من أي وسائل النقل والسفر في العالم!</string>
+
+    <string name="play_again_desc">لرؤية شريط التمرير موضع ترحيب مرة أخرى، انتقل إلى إعدادات -</string>
+    <string name="play_again">العب مرة أخرى</string>
+
+
+    <!--Menu String Start-->
+    <string name="dashboard">الشاشة الرئيسية</string>
+    <string name="my_favourate">مفضلتي </string>
+    <string name="my_profile">الملف الخاص بي</string>
+    <string name="track_service">تتبع الخدمات</string>
+    <string name="pay_Slip">إيصال الراتب</string>
+    <string name="message">الرسائل</string>
+    <string name="notification">التنبيهات</string>
+    <string name="weekDate">الاثنين 03</string>
+    <string name="payslip">إيصال الراتب</string>
+    <string name="settings">الإعدادات  </string>
+    <string name="InBox">صندوق الوارد</string>
+    <string name="Chat">الدردشة </string>
+    <string name="enter_your_message">أدرج رسالتك من فضلك.</string>
+    <string name="Calender">التقويم  </string>
+    <string name="TandC">الاحكام والشروط</string>
+    <string name="logout">الخروج</string>
+    <string name="Pn">دفع الإخطارات</string>
+    <string name="Language">تغير اللغة </string>
+    <string name="Cp">تغير كلمة السر </string>
+    <string name="CU">تواصل معنا</string>
+    <string name="Th">إقتباس اليوم</string>
+    <string name="forget">نسيت؟</string>
+    <string name="version">V 1.0</string>
+
+    <string name="emp_detail">تفاصيل الموظف</string>
+    <string name="emp_name">اسم</string>
+    <string name="division">قطاع</string>
+    <string name="position">موضع</string>
+    <string name="location">موقعك</string>
+    <string name="nation">جنسية</string>
+    <string name="period">للفترة</string>
+    <string name="bank">اسم البنك</string>
+    <string name="payroll">منطقة الرواتب</string>
+    <string name="date_prnt">تاريخ المطبوعة</string>
+    <string name="id_expir">نات / ريس إد إكسيري</string>
+    <string name="dept"> قسم، أقسام</string>
+    <string name="persn_no">بيرس. لا.</string>
+    <string name="pay_mode">طريقة الدفع</string>
+    <string name="pay_date">تاريخ الدفع</string>
+    <string name="pay_curr">عملة الدفع</string>
+    <string name="passport_expir">انتهاء صلاحية جواز السفر</string>
+    <string name="earning">أرباح</string>
+    <string name="number">لا.</string>
+    <string name="unit">وحدة</string>
+    <string name="rate">معدل</string>
+    <string name="arrear">متأخرات</string>
+    <string name="amount">كمية</string>
+    <string name="bss">مقياس الراتب الأساسي</string>
+    <string name="food_allownc">بدل الغذاء</string>
+    <string name="overtime">العمل الإضافي العادي</string>
+    <string name="tot_earning">الأرباح الكلية</string>
+    <string name="deduction">الخصومات</string>
+    <string name="tot_deduction">مجموع الخصومات</string>
+    <string name="contribution">مساهمات</string>
+    <string name="tot_contribution">مجموع المساهمات</string>
+    <string name="net_pay">صافي الأجر</string>
+    <string name="absence_detail">تفاصيل الغياب</string>
+    <string name="absence_type">نوع الغياب</string>
+    <string name="start_date">تاريخ البدء</string>
+    <string name="end_date">تاريخ الانتهاء</string>
+    <string name="days">أيام</string>
+    <string name="payment_details">سنة إلى تاريخ تفاصيل الدفع</string>
+    <string name="description">وصف</string>
+    <string name="curr_period">الفترة الحالية</string>
+    <string name="ytd">YTD</string>
+    <string name="tgp">إجمالي الدفع الإجمالي</string>
+    <string name="tgd">إجمالي إجمالي الخصم</string>
+    <string name="Employee_Details">تفاصيل الموظف</string>
+    <string name="Total_Net_Diff">إجمالي صافي ديف</string>
+
+    <!--Menu String End-->
+
+
+    <!--Activity Tiltles-->
+    <!--Activity Tiltles End-->
+
+    <!-- POP UP's-->
+
+
+    <string name="alert">تنبيه </string>
+    <string name="select_language">الرجاء تحديد اللغة</string>
+    <string name="Contact_Us">الاتصال بنا </string>
+    <string name="change_pass">تغير كلمة المرور</string>
+    <string name="mycalender">التقويم </string>
+    <string name="success">نجاح</string>
+    <string name="warning">تحذير </string>
+    <string name="OK">OK</string>
+    <string name="cancel">إلغاء</string>
+    <string name="No_Network">هذا التطبيق يتطلب اتصال انترنت. الرجاء التاكد من الاتصال</string>
+    <string name="No_Network_connection">لايوجد اتصال انترنت. الرجاء التاكد من اتصالك بالانترنت.</string>
+    <string name="enter_your_comment">الرجاء ادخال تعليقك</string>
+
+    <!-- POP UP's END-->
+
+
+    <string-array name="family_relation">
+        <item>الآب</item>
+        <item>أم</item>
+        <item>شقيق</item>
+        <item>أخت</item>
+    </string-array>
+
+
+    <!--Loader Messages Start-->
+
+    <string name="fetch_feeds">الحصول على البيانات....</string>
+    <string name="sharing">جاري المشاركة الرجاء الانتظار...</string>
+    <string name="loading">جاري التحميل ...</string>
+    <string name="loading_feeds">جاري التحميلا الخلاصات ...</string>
+    <string name="loading_likes">جاري التحميل الإعجاب...</string>
+    <string name="loading_comments">جاري التحميل التعليقات...</string>
+    <string name="loading_notifications">جار تحميل الإشعارات ...</string>
+    <string name="Likes">الإعجاب</string>
+    <string name="Comments">التعليقات</string>
+    <string name="Feeds">مباشر</string>
+    <string name="Posting_your_comment">جاري نشر تعليقك...</string>
+
+    <!--Loader Messages End-->
+
+
+    <!-- DashBoard Start -->
+
+    <string name="news_feeds">اخر الأخبار</string>
+    <string name="service_request">خدمات الموارد البشرية </string>
+    <!-- Feeds Adapter Start-->
+    <string name="liked">إعجاب</string>
+    <string name="like">إعجاب</string>
+    <string name="likes">%1$s اعجاب</string>
+    <string name="key_get_data">جلب بيانات </string>
+    <string name="comments">%1$s تعليقات </string>
+    <string name="views">%1$s مشاهدات</string>
+    <string name="comment">تعليق</string>
+    <string name="share">مشاركة </string>
+    <string name="mins_ago"> قبل دقيقة</string>
+    <string name="hour_ago"> منذ ساعة</string>
+    <!-- Feeds Adapter End-->
+
+    <!-- CategoryFilterList Start-->
+    <string name="fetching_categories">الحصول على الأقسام ...</string>
+    <string name="filter_title">تصفية أخر الأخبار</string>
+    <string name="apply">تقديم </string>
+    <!-- CategoryFilterList End-->
+    <!-- DashBoard End -->
+
+    <!-- Comment Activity Start -->
+    <string name="comment_hint">أكتب تعليقك هنا...</string>
+    <!-- Comment Activity End -->
+
+    <!---->
+    <string name="no_feeds">لم يتم العثور على البيانات</string>
+    <string name="no_Notications">لم يتم العثور على إشعارات.</string>
+    <!---->
+
+    <!-- Questions Start -->
+    <!-- Question Header Name Start-->
+    <string name="type_of_request">نوع الطلب</string>
+    <string name="does_ur_job_require_dl">هل عملك يتطلب رخصة قيادة ؟</string>
+    <string name="cost_charge_to">تسديد رسوم الطلب </string>
+    <string name="chamber_of_commerce_status">نوع الختم </string>
+    <string name="is_salary_require">هل الراتب مطلوب في الرسالة؟</string>
+    <string name="amount_reimbursable">المبلغ٪ المستردة</string>
+    <string name="clinic_in_network">هل العياده ضمن الشبكة الطبية ؟</string>
+    <string name="medical_card_used"> البطاقة الطبية المستخدمة</string>
+    <string name="reason_for_travel">سبب السفر</string>
+    <string name="visa_type">نوع الفيزة </string>
+    <string name="eligible_to_employ">مؤهل وفقا لعقد العمل</string>
+
+    <!-- Question Header Name End-->
+    <!-- Question options-->
+    <string name="new_licence">ترخيص جديد</string>
+    <string name="licence_renewal">تجديد الرخصة </string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="company">شركة</string>
+    <string name="employ">موظف</string>
+    <string name="with_coc">مع شركة نفط الجنوب</string>
+    <string name="without_coc">بدون ختم الغرفة التجارية</string>
+    <string name="business">اعمال</string>
+    <string name="personal">الشخصية</string>
+    <string name="visit_visa">فيزة زيارة</string>
+    <string name="recident_visa">تأشيرة الإقامة</string>
+
+    <string name="within_ksa">داخل المملكة العربية السعودية</string>
+    <string name="outside_ksa">خارج المملكة العربية السعودية</string>
+
+    <string name="twenty_per">20%</string>
+    <string name="hundred_per">100%</string>
+    <!-- Question options-->
+    <!-- Question Arabic options-->
+    <string name="new_licence_ar">ترخيص جديد</string>
+    <string name="licence_renewal_ar">تجديد الرخصة</string>
+    <!-- Question Arabic options-->
+    <!-- Questions End -->
+
+    <!--Tag's -->
+    <string name="isRound">IsRound</string>
+    <string name="IMAGE_PATH">IMAGE_PATH</string>
+    <string name="parentCategory">القسم الرئيسي
+</string>
+    <!--Tag's -->
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="title_activity_family_residance_visit_visa">FamilyResidanceVIsitVIsaActivity</string>
+    <string name="submit">تسليم
+</string>
+    <string name="submit1">تسليم</string>
+
+    <!-- Form Header Name -->
+
+    <string name="drivingHeader">طلب رخصة قيادة </string>
+    <string name="VisaHeader">طلب تاشيرة إقامة</string>
+    <string name="EmploymentHeader">طلب خطاب تعريف للموظف </string>
+    <string name="BankAccountHeader">تحديث الحساب البنكي </string>
+    <string name="BankLoanHeader">خطاب تثبيت الراتب</string>
+    <string name="PayrollCardHeader">طلب بطاقة الرواتب- الرقم السري</string>
+    <string name="InsuranceCardHeader">طلب بطاقة التأمين الصحي</string>
+    <string name="LeaveRequestHeader">طلب اجازة</string>
+    <string name="HospitalLetterHeader">طلب خطاب طبي</string>
+    <string name="visa_letter">نموذج خطاب تأشيرة زيارة</string>
+    <string name="medical_expence">استرجاع المنفقات الطبية</string>
+    <string name="change_of_salary_bank">تغيير معلومات الحساب البنكي</string>
+    <string name="FamilyResidenceHeader">طلب رخصة قيادة </string>
+    <string name="AdvanceHousingAllowance">طلب بدل السكن المقدم</string>
+
+    <!-- *********************************************** -->
+
+    <string name="tandc">شروط وأحكام الخدمة</string>
+    <string name="Settings">الظبط </string>
+    <string name="employment_letter">خطاب تعريف</string>
+    <string name="resonError">اكتب سبب الطلب</string>
+    <string name="SubmittedMsg">تم التسليم بنجاح </string>
+    <string name="bankName">اسم البنك</string>
+    <string name="IqumaNumber">رقم الاقامة</string>
+    <string name="drive_company_vehical">مصرح لك بقيادة سيارة الشركة </string>
+
+    <string name="GrievanceAgainst">تظلم على</string>
+    <string name="reason_for_grievance">سبب التظلم</string>
+    <string name="Grievance">تظلم</string>
+    <string name="PleaseEnterGrievanceAgainst">الرجاء ادخال تظلم على</string>
+    <string name="grievance_request">طلب التظلم</string>
+    <string name="PleaseEnterLocation">الرجاء ادخال موقعك</string>
+    <string name="Location">الموقع</string>
+
+    <string name="Passport_No">رقم الجواز</string>
+    <string name="HospitalName">اسم المستشفى </string>
+    <string name="Reason">السبب</string>
+    <string name="LeaveType">نوع الاجازه</string>
+    <string name="AddOneMore">اضف 1 </string>
+    <string name="From">من </string>
+    <string name="To">الى</string>
+    <string name="DepartureDate">تاريخ المغادرة </string>
+    <string name="ReturnDate">تاريخ العودة </string>
+    <string name="No_matching_record_found">لم يتم العثور على المعلومات المطابقة </string>
+    <string name="Relationship">صلة القرابة </string>
+    <string name="DOB">تاريخ الميلاد</string>
+    <string name="Nationality">الجنسية </string>
+    <string name="SelectNationality"> اختار الجنسية </string>
+    <string name="request_type">نوع الطلب</string>
+    <string name="name"> الاسم </string>
+    <string name="EntreName">ادخل الاسم </string>
+    <string name="status">الحالة:</string>
+    <string name="LastupdatedOn">اخر تحديث على :</string>
+    <string name="NameOfClinic">اسم العيادة</string>
+    <string name="PaymentDetails">تفاصيل الدفع</string>
+    <string name="FCurrent">F الحالية</string>
+    <string name="SAREquip">معدات سار</string>
+    <string name="Remarks">ملاحظة </string>
+    <string name="Requested_on">طلب </string>
+    <string name="NameasperBankRecord">اسمك في السجلات البنكية </string>
+    <string name="NameofBank">اسم البنك </string>
+    <string name="barnch">فرع</string>
+    <string name="BankAddress">عنوان البنك </string>
+    <string name="AccountNumber">رقم الحساب </string>
+    <string name="Track_service_req">تتبع الخدمات</string>
+    <string name="not_able">N/A</string>
+    <string name="stay_updates">ابقى على اطلاع</string>
+    <string name="req_service">خدمات الموارد البشرية بظغطة زر..</string>
+    <string name="Track_service_req_detail">تتبع الخدمات </string>
+
+    <string name="IBAN">IBAN</string>
+    <string name="attachment">Attachment</string>
+    <string name="Swiftcode">رمز swift </string>
+    <string name="BankShortCode">الرمز البنكي القصير</string>
+    <string name="Currency">العملة </string>
+    <string name="Currency_SAR">SAR</string>
+    <string name="EnterIDNumber">ادخل رقم الهوية الشخصية </string>
+    <string name="SIGNUP">مستخدم جديد</string>
+    <string name="Forgot_Password">نسيت كلمة المرور </string>
+    <string name="CHOOSE_PASSWORD">اختار كلمة المرور</string>
+    <string name="proj">اجتماع مشروع  الايكونيكت</string>
+    <string name="Send_Otp">ارسل رمز التأكيد </string>
+    <string name="Resend_OTP">اعادة ارسال رمز التحقق </string>
+    <string name="Verify">تأكيد</string>
+    <string name="otp_Validation_header">التحقق من صحة الرمز</string>
+    <string name="Enter_OTP_here">اكتب رمز التحقق هنا</string>
+    <string name="An_OTP_Code_is_sent_to">تم ارسال رمز تحقق الى </string>
+    <string name="doc">اظغط هنا لإرفاق صوره او مستند</string>
+    <string name="Choose_password_hint">اختار كلمة المرور </string>
+    <string name="confirm_password_hint">تاكيد كلمة االمرور </string>
+    <string name="LOGIN">تسجيل الدخول  </string>
+    <string name="StaffID">الرقم الوظيفي </string>
+    <string name="StaffID_Hint">ادخل رقمك الوظيفي</string>
+    <string name="password">كلمة مرور </string>
+    <string name="Iagree">اوافق </string>
+    <string name="Mobile">الهاتف  </string>
+    <string name="Email">البريد الالكتروني </string>
+    <string name="Grade">الرتبة </string>
+    <string name="Religion">الديانة </string>
+    <string name="nationality">الجنسية </string>
+    <string name="startTTypingHere">ابداء بالكتابة هنا...... </string>
+    <string name="WorkCountry">بلد العمل </string>
+    <string name="Status">الحالة</string>
+    <string name="Proceed">نفذ</string>
+    <string name="pleaseWait">الرجاء الإنتظار...</string>
+    <string name="colon">:</string>
+    <string name="comma">,</string>
+
+    <string name="Proceed1">نفذ</string>
+    <string name="save">حفظ </string>
+    <string name="Work_Country">بلد العمل </string>
+    <string name="Nationality1">الجنسية </string>
+    <string name="org">القسم </string>
+    <string name="ps">الموقع الحالي</string>
+    <string name="Religion2">الديانة</string>
+    <string name="Mobile1">الهاتف </string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="Grade1">الرتبة</string>
+
+    <string name="AdvPay_in_month">الدفعه المسبقة الدفع شهريا</string>
+    <string name="IDType">نوع الهوية الشخصية </string>
+    <string name="NationalID">الهوية الوطنية</string>
+    <string name="IqumaNo">رقم الاقامة</string>
+    <string name="Detailed_salary">راتب مفصل </string>
+    <string name="Monthly_amount">المبلغ الشهري </string>
+    <string name="attechmentHeader">اظغط هنا لإرفاق مستند او صورة</string>
+    <string name="DATE">التاريخ </string>
+    <string name="DATEmsg">تاريخ الميلاد</string>
+    <string name="currentPassword">اكتب كلمة المرور الحاليه هنا ..</string>
+    <string name="EnterCurrentPassword">ادخل كلمة المرور الحاليه هنا </string>
+    <string name="ChooseNewPassword">اختار كلمة مرور جديدة </string>
+    <string name="ChooseYourNewPassword">اكتب كلمة المرور الجديدة </string>
+    <string name="confirmNewPassword">تاكيد كلمة المرور </string>
+    <string name="PleaseEnterReason">فضلاً ادخل السبب</string>
+    <string name="HAPreviouslyPaidMsg">الرجاء ادخال المبلغ المطلوب</string>
+    <string name="AdvancePaymentMonthMsg">الرجاء ادخال الدفعه المقدمة شهرياً</string>
+    <string name="FromDateMsg">الرجاء اختيار التاريخ من </string>
+    <string name="ToDateMsg">الى </string>
+    <string name="InvalidDateMsg">يجب الا يكون التاريخ الثاني اكبر من الاول</string>
+    <string name="BankRecordMsg">الرجاء ادخال الاسم حسب سجل البنكي</string>
+    <string name="BankNameMsg">الرجاء ادخال اسم البنك </string>
+    <string name="TypeofRequestMsg">Please select type of request.</string>
+    <string name="BranchNameMsg">الرجاء ادخال الفرع</string>
+    <string name="BankAddressMsg">الرجاء ادخال عنوان البنك </string>
+    <string name="AccountNumberMsg">الرجاء ادخال رقم الحساب البنكي</string>
+    <string name="IbaNNumberMsg">الرجاء ادخال الـ IBAN</string>
+    <string name="swiftCodeMsg">الرجاء ادخال رمز Swift </string>
+    <string name="bankShortCodeMsg">الرجاء ادخل الرمز القصير</string>
+    <string name="currencyMsg">فضلاً ادخل العملة.</string>
+    <string name="deleteUpdateMsg">هل تريد الحذف او التحديث</string>
+    <string name="Delete">حذف </string>
+    <string name="Update">تحديث </string>
+    <string name="StaffIDMsg">الرجاء ادخال الرقم الوظيفي </string>
+    <string name="Please_enter_new_password">اكتب كلمة المرور الجديد </string>
+    <string name="Please_enter_current_password">ادخل كلمة المرور الحالية</string>
+    <string name="Please_re_enter_password">الرجاء اعد ادخال كلمة المرور </string>
+    <string name="New_password_and_confirm_passwordMsg">يجب ان تكون كلمة المرور الجديده و تاكيد كلمة المرور متطابقاً </string>
+    <string name="Password_changed_successfully">تم تغير كلمة المرور بنجاح</string>
+    <string name="Please_enterSubject">الرجاء كتابة العنوان </string>
+    <string name="Please_enterMessage">الرجاء كتابة الرسالة </string>
+    <string name="Please_enter_passport_number">الرجاء ادخال رقم الجواز</string>
+    <string name="Please_select_Type_of_Request">الرجاء اختار نوع الطلب </string>
+    <string name="Please_Enter_Saudi_Embassy_Consulate_to_issue_visa">الرجاء إدخال قنصلية السفاره السعوديه لاصدار التاشيرة</string>
+    <string name="PleaseEnterHospitalName">الرجاء ادخال اسم المستشفى </string>
+    <string name="PleaseEnterHospitalLocation">الرجاء ادخال موقع المستشفى </string>
+    <string name="PleaseEnterPassword">الرجاء ادخال كلمة المرور </string>
+    <string name="Please_enter_clinic_name">الرجاء ادخال اسم العياده </string>
+    <string name="Please_entere_valid_OTP">الرجاء ادخال رمز التحقق الصحيح </string>
+    <string name="Please_enter_Confirm_Password">الرجاء تاكيد كلمة المرور</string>
+    <string name="Please_Enter_Iquma_Number">الرجاء ادخال رقم الاقامة </string>
+
+
+    <string-array name="countryName">
+        <item>الإمارات العربية المتحدة</item>
+        <item>سلطنة عمان</item>
+        <item>الكويت</item>
+        <item>دولة قطر</item>
+        <item>البحرين</item>
+        <item>المملكة العربية السعودية</item>
+        <item>الإمارات العربية المتحدة</item>
+        <item>سلطنة عمان</item>
+        <item>الكويت</item>
+        <item>دولة قطر</item>
+        <item>البحرين</item>
+        <item>المملكة العربية السعودية</item>
+    </string-array>
+    <string-array name="currencyCode">
+        <item> SAR</item>
+        <item> AED</item>
+        <item> OMR</item>
+        <item> KWD</item>
+        <item> QAR</item>
+        <item> BHD</item>
+        <item> SAR</item>
+        <item> AED</item>
+        <item> OMR</item>
+        <item> KWD</item>
+        <item> QAR</item>
+        <item> BHD</item>
+    </string-array>
+    <string-array name="relation">
+        <item>اب </item>
+        <item>ام </item>
+        <item>ابن  </item>
+        <item>ابنة </item>
+        <item>زوج</item>
+
+    </string-array>
+    <string-array name="Nationality">
+        <item>الهند </item>
+        <item>امريكا </item>
+        <item>باكستاني </item>
+        <item>بنجلاديش </item>
+    </string-array>
+
+    <string-array name="ReuestTypes">
+        <item>Card Re-issue </item>
+        <item>Pin Reissue </item>
+        <item>Card &amp; Pin Reissue </item>
+    </string-array>
+
+    <string-array name="IDType">
+        <item>رقم الجواز</item>
+        <item>الهوية الوطنية</item>
+        <item>بطاقة الإقامة</item>
+    </string-array>
+
+
+    <string name="passportNumber">رقم الجواز</string>
+    <string name="wel">مرحباً</string>
+    <string name="welcome">مرحباً بكم في تطبيق المراعي للتواصل.. خدمات الموارد البشرية بظغطة زر.. </string>
+    <string name="title_activity_setting">الظبط </string>
+    <string name="subject">العنوان </string>
+    <string name="Message">الرسالة</string>
+    <string name="enter_subject">ادخل العنوان</string>
+    <string name="start_typeing">اكتب هنا...</string>
+    <string name="familydetailalert">الرجاء ادخال تفاصيل الاسرة</string>
+    <string name="medicaldetailalert">الرجاء ادخال تفاصيل النفاقات الطبية </string>
+    <string name="EnterNameMsg">الرجاء ادخال الاسم</string>
+    <string name="RelationshipMsg">حدد نوع العلاقة</string>
+    <string name="DOBMsg">الرجاء ادخال تاريخ الميلاد</string>
+    <string name="NationalityMsg">الرجاء ادخال الجنسية </string>
+    <string name="IDNoMsg">الرجاء ادخل رقم الهويه</string>
+    <string name="AddMsg">اضف 1</string>
+    <string name="ac">١. قبول الاحكام و الشروط</string>
+    <string name="detail1">قبول
+شركة المراعي ترحب بك بإستخدام التطبيق اذا كنت موظفاً لديها فور قبولك لقائمة الاحكام و الشروط.علماً بإن استخدامك للتطبيق
+سيكون مرتبط بالشروط والاحكام المذكورة سواء اذ كان لديك حساب حالي او كنت مستخدم جديد .تطبيق المراعي يراعي الطريقة
+الصحيحة لمراجعة شروط الخدمة بشكل منتظم ودوري ، كما ان بإستطاعتك تصفح هذه النسخه المحدثه للشروط والاحكام دورياً من
+خلال زيارة هذه الصفحة .</string>
+    <string name="ac1">٢. وصف الخدمه</string>
+    <string name="detail2">طريقة التسجيل في الخدمة ستتيح لموظفي شركة المراعي التسجيل في التطبيق كمستخدم من اجل الاستفادة من قائمة الموارد البشرية
+المتاحة .حيث تم انشاء هذه الخدمة من اجل اعطاء الموظفين فرصة الاستفادة من الخدمات المتاحة بشكل مباشر والاستغناء عن زيارة
+مكتب الموارد البشرية شخصياً. فلكل مستخدم اسم خاص به ( الرقم الوظيفي) وكلمة مرور ستكون مرتبطة فقط في ملفه في ساب.
+وتتكون العملية من خطوتين :</string>
+    <string name="ac2">وتتكون العملية من خطوتين :</string>
+    <string name="h1">1- طلب تسجيل</string>
+    <string name="detail3">على المستخدم إدخال :
+رقمه الوظيفي
+عنوانه الالكتروني الخاص بالمراعي
+ورقم جوال يتم الاتصال به (يجب ان يكون مسجل بالساب)</string>
+    <string name="h2">2-طلب التحقق</string>
+    <string name="detail4">حيث يطلب من المستخدم إدخال رقم الرمز بعد إكمال الخطوة الأولى بنجاح.يجب عليك أن تقر بأنك توافق على ما يلي:
+1. إبلاغ الادارة فوراً باي استخدام غير مصرح به لحسابك أو كلمة المرور.\n
+2. يجب عليك التأكد من تسجيل الخروج من &quot;تواصل الموظفين&quot; في كل مرة تستخدم فيها التطبيق.
+لن يكون &quot;تواصل الموظفين&quot;مسؤول عن أي خسارة أو ضرر قد يحدثان بسبب انتهاكك لأحكام الفقرتين المذكورة اعلاه .\n
+3. تأكد من تقديم معلومات أصيلة وصحيحة وكاملة ومحدثة عن نفسك وفقا لمتطلبات التسجيل.</string>
+    <string name="ac10">ايقاف وانهاء الخدمات</string>
+    <string name="detail5">إذا تم إنهاء الخدمة سيكون ذلك بأثر فوري. بعد الإنهاء، لا يمكنك الدخول إلى حسابك أو الخدمات المرتبطة به. لا تتحمل إكونيكت أي مساءلة عن مثل هذا الإجراء. ومع ذلك، يمكنك تصفح صفحات المعلومات العامة على التطبيق مثل أي موظف آخر.                        يجب عليك الاعتراف و أمب؛ قبول أنه في ظل ظروف معينة، يجوز لشركة إكونيكت، دون إشعار مسبق، إنهاء اشتراكك مباشرة في الخدمات التي تقدمها. قد تتضمن أسباب الإنهاء، على سبيل المثال لا الحصر:إذا تم إنهاء الخدمة سيكون ذلك بشكل فوري و لا يمكنك الدخول إلى حسابك أو استخدام الخدمات المرتبطة به بعد ايقافه ، علماً بان
+
+برنامج &quot;تواصل الموظفين&quot;لا يتحمل أي مساءلة جراء انهاء خدمات حسابك . مع ذلك يمكنك تصفح صفحات المعلومات العامة في
+
+التطبيق مثل أي موظف آخر.
+
+يجب عليك أن تقر وتقبل أنه في ظل ظروف معينة، يجوز ل برنامج &quot;تواصل الموظفين&quot; إنهاء اشتراكك فورا في الخدمات التي تقدمها
+
+دون إشعار مسبق .
+
+قد تشمل أسباب الإنهاء، على سبيل المثال لا الحصر:
+
+1. مخالفة كليه أو جزئية لشروط وأحكام الخدمة\n
+
+2. الأوامر القضائية أو المطالبات من جهات اخرى في المراعي\n
+
+\n3. بناءً على طلبك الشخصي .
+
+\n4. عد م تحديث النظام المتعلق بخدمات اخرى.
+
+5. فشل فني غير متوقع\n
+
+* يتبع إنهاء اشتراكك في برنامج &quot;تواصل الموظفين&quot; :
+
+\n1. إنهاء الوصول إلى الخدمة ومكوناتها الفرعية.
+
+\n2. حذف كلمة المرور وجميع التفاصيل الخاصة بك وكذلك الملفات الموجودة في حسابك.
+
+\n3. لن تكون قادر على استخدام الخدمة في المستقبل.
+
+أخيراً ايكونكت لن تكون مسؤولة عن أي مساءلة منك أو من أي طرف ثالث لإنهاء مبرر للحساب .
+</string>
+    <string name="ac4">ملكية حساب برنامج &quot;تواصل الموظفين&quot;وإجراءات الأمان المرتبطة به</string>
+    <string name="detail6">يجب عليك الحفاظ على أمن حسابك وتكون مسئولة وحدك عن جميع الأنشطة التي يتم إجراؤها باستخدام حسابك أو أي إجراءات أخرى للوصول إلى البوابة.يجب عليك الحفاظ على أمن حسابك فانت وحدك المسؤول عن جميع الأنشطة التي يتم إجراؤها من خلال حسابك.عليك أن تتعهد بتقديم
+تقرير فوري إلى برنامج &quot;تواصل الموظفين&quot;عند ملاحظة أي استخدام غير مصرح به لحسابك أو أي انتهاك أمني اخر.لن تتحمل
+إكونكت مسؤولية الخسائر أو الأضرار الناجمة عن عدم التزامك بالشروط.كما يجب عليك أن ادراك أنك تقر بالمسؤولية الكاملة عند
+استخدام اسم المستخدم وكلمة المرور و المحافظه عليهم ، ويجب ألا تكشف عن كلمة المرور لأي طرف آخر.</string>
+
+
+    <string name="please_attach1">يرجى إرفاق شهادة الميلاد لجميع المعالين، جواز السفر، شهادة الزواج، دبلوم الجامعة و / أو شهادة الكلية</string>
+    <string name="please_attach2">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach3">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach4">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach5">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach6">الرجاء ارفاق نسخه من الايبان</string>
+    <string name="please_attach7">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach8">الرجاء ارفاق مجلد او صورة</string>
+    <string name="please_attach9">صورة من الهوية الوطنية او الاقامة</string>
+    <string name="please_attach10">الرجاء ارفاق مجلد او صورة</string>
+    <string name="ReasonForRequest">الرجاء ادخال سبب الطلب</string>
+    <string name="SaudiEmbassyConsulate_to_issue_visa">قنصلية السفارة السعودية لاصدار تاشيرة</string>
+    <string name="FAMILY_DETAILS"> بيانات العائلة</string>
+    <string name="HA_Previously_paid_upto">كان قدر بدل السكن المقدم </string>
+    <string name="OneYear">سنة واحده</string>
+    <string name="SixMonths"> ستة اشهر</string>
+    <string name="OtherPeriod">فترة اخرى </string>
+    <string name="Fragment_Active">قيد الاجراء </string>
+    <string name="Fragment_Closed">تم </string>
+    <string name="ID_Type">نوع الهوية الشخصية </string>
+
+    <string name="January">كانون الثاني</string>
+    <string name="February">شهر فبراير</string>
+    <string name="March">مارس</string>
+    <string name="April">أبريل</string>
+    <string name="May">قد</string>
+    <string name="June">يونيو</string>
+    <string name="July">يوليو</string>
+    <string name="August">أغسطس</string>
+    <string name="September">سبتمبر</string>
+    <string name="October">شهر اكتوبر</string>
+    <string name="November">شهر نوفمبر</string>
+    <string name="December">ديسمبر</string>
+
+    <string name="OTP_sent_successfully">تم ارسال رمز التحقق بنجاح.</string>
+    <string name="LoginResponceMessage">تسجيل الدخول بنجاح.</string>
+    <string name="OTP_validated_successfully">تم التاكد من رمز التحقق.</string>
+    <string name="Registered_successfully">تم التسجيل بنجاح.</string>
+
+
+    <string name="contact_us">سيقوم فريق علاقات الموظفين باستلام رسالتك والاتصال بك في أقرب وقت ممكن.</string>
+    <string name="Take_Photo">تصوير</string>
+    <string name="Choose_from_Gallery">اختر من المعرض</string>
+    <string name="Documents">المستندات</string>
+    <string name="Cancel_small">إلغاء</string>
+    <string name="Please_enter">تفضل</string>
+    <string name="PleaseEnterIqamaNumber">الرجاء ادخال رقم الاقامة </string>
+    <string name="RejectReason">سبب الرفض</string>
+    <string name="failed">فشل الاتصال بالخادم</string>
+
+    <!--Added by Client-->
+    <string name="Pending">قيد الأنتظار</string>
+    <string name="Rejected">مرفوض</string>
+    <string name="read_to_collect_from_your_HR_representative">جاهز للاستلام من ممثل الموارد البشرية الخاص بك</string>
+    <string name="Work_In_Progress">قيد التنفيذ</string>
+    <string name="approved_and_we_will_send_to_your_location">طلبك مقبول وسيتم ارساله لموقعك </string>
+    <string name="Approved_and_will_be_send_to_your_location">تم قبول الطلب وسيتم ارسالة لموقعكم</string>
+    <string name="PostedOn">تطبيق المراعي لتواصل:</string>
+    <string name="type_message">اكتب رسالة ...</string>
+    <string name="proc_req">جاري معالجة الطلب</string>
+    <string name="rejected">مرفوض</string>
+    <string name="read_hr">جاهز للأستلام من ممثل الموارد البشرية الخاص بك</string>
+    <string name="approved">تمت الموافقه</string>
+    <string name="work_in_progress">أعمال جارية</string>
+
+
+    <string name="departement"> قسم، أقسام</string>
+    <string name="bank1">بنك</string>
+    <string name="for_p">للفترة</string>
+    <string name="pay_dat">تاريخ الدفع</string>
+    <string name="pay_cu">عملة الدفع</string>
+    <string name="pay_are">منطقة الرواتب</string>
+    <string name="net">نيت / ريس إد إكسيري</string>
+    <string name="pass_ex">انتهاء صلاحية جواز السفر</string>
+    <string name="bas_sal">مقياس الراتب الأساسي</string>
+    <string name="nor_over">العمل الإضافي العادي</string>
+    <string name="food_all">العلاوات الغذائية</string>
+    <string name="total">مجموع</string>
+    <string name="deduction1">المستقطع</string>
+    <string name="net_pay1">صافي الأجر</string>
+    <string name="abs_detail">غائب التفاصيل</string>
+    <string name="abs_type">نوع غائب</string>
+    <string name="st_dt">تاريخ البدء</string>
+    <string name="end_dt">تاريخ الانتهاء</string>
+    <string name="tot_days">إجمالي الأيام</string>
+
+    <string name="year_to_date">من سنة إلى تاريخ تفاصيل الدفع</string>
+    <string name="desc">وصف</string>
+    <string name="curr_per">الفترة الحالية</string>
+    <string name="YTD">YTD</string>
+    <string name="total_gross_pay">إجمالي الدفع الإجمالي</string>
+    <string name="total_gross_ded">إجمالي إجمالي الخصم</string>
+    <string name="diff_from_prev">ديف من منث السابقة</string>
+    <string name="total_net_pay">إجمالي صافي الدفع</string>
+    <string name="starting_from">بدءا من</string>
+    <string name="ending_on">جار الانتهاء</string>
+    <string name="attendance">إن حضور</string>
+    <string name="organiser">منظم</string>
+    <string name="warning1">لم يتم العثور على أي حدث.</string>
+
+    <string name="planned">مخطط</string>
+    <string name="Approved">تمت الموافقه</string>
+    <string name="Cancelled">تم الالغاء</string>
+    <string name="Tentative">مؤقت</string>
+    <string name="Confirmed">تم تأكيد</string>
+
+    <string name="no_data_found">لاتوجد بيانات.</string>
+
+    <string name="grp_msg">رسائل جماعية</string>
+    <string name="per_msg">رسائل شخصية</string>
+    <string name="downaloding">جارى التحميل...</string>
+    <string name="proceed">تقدم</string>
+    <string name="send">ارسل</string>
+    <string name="no_Groups_Found">لم يتم العثور على مجموعة</string>
+    <string name="cu">كما يمكنك الاتصال من خلال:</string>
+    <string name="number1">+966 11 528 7902</string>
+    <string name="number2">+966 11 528 7901</string>
+    <string name="collect_HR">تمت الموافقه على طلبك، استلم الطلب من ممثل الموارد البشرية</string>
+    <string name="user_login">تم تسجيل دخولك باستخدام جهاز اخر، سيتم تسجيل خروجك من الجهاز الحالي</string>
+    <string name="profile_pic">تغييرات صورة الملف الشخصي بنجاح.</string>
+    <string name="force_logout">تم تسجيل دخولك باستخدام جهاز اخر، سيتم تسجيل خروجك من الجهاز الحال</string>
+    <string name="update">تحديث</string>
+
+</resources>
+

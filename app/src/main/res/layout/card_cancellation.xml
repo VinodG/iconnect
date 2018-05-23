@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center_vertical"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/reason_for_cancellation"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_reason_for_card_cancellation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/reason_for_cancellation"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:drawableRight="@drawable/down_arow"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+
+
+        <EditText
+            android:id="@+id/et_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:background="@drawable/common_data_input_field"
+            android:gravity="left"
+            android:hint="@string/startTTypingHere"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_3"
+            android:textColor="@color/text_light"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContributionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/company_details"
+        android:textAllCaps="true"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_compnay_ame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/company_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/et_compnay_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/tvBranchID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/branch_id"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_brach_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/tvPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/authorized_person"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+
+
+        <EditText
+            android:id="@+id/et_authorized_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:paddingLeft="@dimen/margin_10"
+            android:hint="@string/authorized_person"
+            android:enabled="false"
+            android:inputType="textCapSentences"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+       <!-- <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />-->
+
+        <TextView
+            android:id="@+id/tvContactNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/contact_number"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvC3CardMemberDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/c3_card_member_details"
+        android:textAllCaps="true"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCardMemberFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/card_member_full_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_CarMemberdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/tvCardHolderMobileNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/card_holder_mobile_num"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etCardHolderMobileNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="Please enter Card Holder's Mobile Number"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tvEmployeeIDno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/employee_id_no"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/etEmployeeIDno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:drawablePadding="@dimen/margin_60"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_10"
+            android:background="@drawable/line_full"
+            android:drawablePadding="@dimen/margin_60"
+            android:hint="From"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_10" />
+
+        <TextView
+            android:id="@+id/tvC3PayrollCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/c3_payroll_card_number"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etC3PayrollCardNum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/c3_payroll_card_number"
+            android:inputType="textCapSentences"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+    </LinearLayout>
+</LinearLayout>

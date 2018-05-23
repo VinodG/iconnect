@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_atm_switch_claim"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_10"
+        android:visibility="visible"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/card_number"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="Enter Card Number"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tv_card_member_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/card_member_mobile_number"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_card_member_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/text_light"
+            android:hint="Enter Card member Mobile Number"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContributionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/withdraw_details"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:padding="@dimen/margin_10"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/transaction_date"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_transaction_date_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_10"
+            android:drawableRight="@drawable/calander"
+            android:hint="Select Transaction Date"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/margin_5"
+            android:textColor="@color/text_light"
+            android:paddingRight="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_13"
+            android:layout_marginRight="@dimen/margin_13"
+            android:background="@drawable/line_full" />
+
+        <TextView
+            android:id="@+id/tv_transaction_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/transaction_time"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/tv_transaction_time_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="Select Transaction Time"
+            android:textColor="@color/text_light"
+            android:focusableInTouchMode="false"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tvPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/amount_withdraw"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_amount_with_draw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:hint="Enter Amount Withdrawn"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/amount_recived"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_amount_recived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="Enter Amount Received"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_5"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:id="@+id/tv_amount_disputed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/amount_disputed"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_amount_disputed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight= "@dimen/margin_8"
+            android:hint="Enter Amount Disputed"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:enabled="true"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tv_bankname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/bank_name"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_bank_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:hint="Enter Bank Name"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tv_atm_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="@string/atm_location"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_atm_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:hint="Enter Atm Location"
+            android:textColor="@color/text_light"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+        <TextView
+            android:id="@+id/tv_reason_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_5"
+            android:text="Additional Comments"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_additional_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:background="@drawable/common_data_input_field"
+            android:gravity="left"
+            android:hint="@string/startTTypingHere"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_3"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+
+    </LinearLayout>
+</LinearLayout>

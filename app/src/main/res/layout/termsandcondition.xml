@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/white"
+              android:orientation="vertical"
+              >
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIAgree"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-7dp"
+        android:indeterminate="true"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <Button
+        android:id="@+id/btnIAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/signuo"
+        android:onClick="goTONextScreen"
+        android:text="@string/Iagree"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvB1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ac"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="@string/detail1"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvB2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ac1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/detail2"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvB3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/ac2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvB4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/h1"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/detail3"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvB5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/h2"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/detail4"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <TextView
+                android:id="@+id/tvB6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ac10"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_small_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:padding="@dimen/margin_5"
+                android:text="@string/detail5"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/margin_5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:text="5."
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_small_16"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvB7"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/ac4"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/text_size_small_16"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_13"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingRight="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5"
+                android:text="@string/detail6"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_very_small"
+                android:textStyle="normal"/>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@drawable/signuo"
+                android:onClick="goTONextScreen"
+                android:text="@string/Iagree"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

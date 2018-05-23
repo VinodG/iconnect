@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"/>
+    <LinearLayout
+        android:id="@+id/llComment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:background="@color/app_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10">
+        <EditText
+            android:id="@+id/msg_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:textCursorDrawable="@color/white"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/type_message"/>
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+            android:src="@drawable/send_button"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+-->
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_10"
+        android:background="@drawable/common_data_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivUserPic"
+                android:layout_margin="@dimen/margin_15"
+                android:background="@drawable/form_eight"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Abdul Raseed"
+      android:textColor="@color/blue"
+      android:id="@+id/tvUserName"
+      android:textSize="@dimen/text_size_small_16"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Manager"
+
+                    android:id="@+id/tvDesignation"
+                    android:textSize="@dimen/text_size_small_16"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="01754"
+                    android:id="@+id/tvEmpoyCode"
+                    android:textSize="@dimen/text_size_small_16"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/margin_15"
+    android:layout_marginTop="@dimen/margin_20">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="@dimen/text_size_small_16"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="abdulr@abdul.com"
+                android:id="@+id/tvEmailId"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+99999999999"
+        android:id="@+id/tvMobile"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_small_16"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Religion"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hinduism"
+        android:id="@+id/tvReligion"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indian"
+        android:id="@+id/tvNationality"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work Country"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:id="@+id/tvWorkCountry"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:layout_marginTop="@dimen/margin_15"
+        android:textSize="@dimen/text_size_small_16"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active"
+        android:id="@+id/tvStatus"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_small_16"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/submit_button"
+            android:text="PROCEED"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+
+<!--
+</LinearLayout>-->

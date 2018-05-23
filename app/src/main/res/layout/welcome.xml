@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/sp"
+              android:orientation="vertical"
+              android:gravity="bottom|center_horizontal"
+              android:paddingBottom="@dimen/margin_15">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_color"
+        android:textStyle="bold"
+        android:text="@string/wel"
+        android:textSize="@dimen/text_size_very_small_14"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_5"
+        />
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_color"
+        android:drawableBottom="@drawable/textunderline"
+        android:drawablePadding="@dimen/margin_5"
+        android:textStyle="bold"
+        android:text="Mr. Abdul Raheem"
+        android:textSize="@dimen/text_size_normal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_40"
+        />
+    <TextView
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_light"
+        android:textStyle="bold"
+        android:text="@string/welcome"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_very_small_14"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginBottom="@dimen/margin_60"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signuo"
+        android:textSize="@dimen/text_size_very_small_14"
+        android:textColor="@color/white"
+        android:text="@string/Proceed"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:onClick="gotodashboard"/>
+
+</LinearLayout>

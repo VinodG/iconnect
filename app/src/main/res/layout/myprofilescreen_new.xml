@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8"
+            android:background="@drawable/content_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date of Birth"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvDob"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date of Joining"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvDateofJoin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Division"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvDivision"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Band"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvBand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bank Name"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvBankName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bank Account/C3 Card No."
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvBankAccount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IBAN Number"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvIBAN_Num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Passport Number"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvPassportNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Expiry Date"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvExpiry_Date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Visa Expiry Date"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvVisa_Expiry_Date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin_10">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sponsor"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small" />
+
+                <TextView
+                    android:id="@+id/tvSponsor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_10"
+                android:background="@color/gray" />
+            <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="@dimen/margin_10"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvResetPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Change Password"
+                        android:onClick="onClick"
+                        android:gravity="center|start"
+                        android:drawableRight="@drawable/arrow_farword"
+                        android:textSize="@dimen/text_size_very_small_14"
+                        android:textColor="@color/text_dark"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/gray_light"/>
+                    <TextView
+                        android:id="@+id/tvMyRequests"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="My Requests"
+                        android:onClick="onClick"
+                        android:gravity="center|start"
+                        android:drawableRight="@drawable/arrow_farword"
+                        android:textSize="@dimen/text_size_very_small_14"
+                        android:textColor="@color/text_dark"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/gray_light"/>
+                    &lt;!&ndash;<TextView
+                        android:id="@+id/tvPaySlip"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="Pay Slip"
+                        android:onClick="onClick"
+                        android:gravity="center|start"
+                        android:drawableRight="@drawable/arrow_farword"
+                        android:textSize="@dimen/text_size_very_small_14"
+                        android:textColor="@color/text_dark" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/gray_light"/>&ndash;&gt;
+                    <TextView
+                        android:id="@+id/tvMyDocuments"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="My Documents"
+                        android:onClick="onClick"
+                        android:gravity="center|start"
+                        android:drawableRight="@drawable/arrow_farword"
+                        android:textSize="@dimen/text_size_very_small_14"
+                        android:textColor="@color/text_dark"/>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.2dp"
+                        android:background="@color/gray_light" />
+                    <TextView
+                        android:id="@+id/tvMyFavourites"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="My Favourites"
+                        android:onClick="onClick"
+                        android:gravity="center|start"
+                        android:drawableRight="@drawable/arrow_farword"
+                        android:textSize="@dimen/text_size_very_small_14"
+                        android:textColor="@color/text_dark"/>
+                </LinearLayout>
+            -->
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_10">
+
+        <Button
+            android:id="@+id/btn_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signuo"
+            android:onClick="MoveToDashboard"
+            android:text="@string/Proceed"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

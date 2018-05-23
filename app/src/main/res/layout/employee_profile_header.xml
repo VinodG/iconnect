@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/employee_profile_bg"
+    android:layout_below="@+id/toolbar"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_40">
+        <TextView
+            android:id="@+id/tvUser_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Abdul Raheem"
+            android:textSize="@dimen/text_size_large_22"
+            android:layout_marginTop="@dimen/margin_15"
+            android:textColor="@color/app_color"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tvUserDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Sales Manager"
+            android:textSize="@dimen/text_size_medium_18"
+            android:textColor="@color/text_dark"
+            android:gravity="center" />
+        <TextView
+            android:id="@+id/tvUser_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="[254786,Grade A]"
+            android:textSize="@dimen/text_size_very_small_14"
+            android:textColor="@color/text_dark"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_15">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/map_icon"/>
+                <TextView
+                    android:id="@+id/tvCountry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Abu Dhabi, Dubai"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_medium_18"
+                    android:layout_marginTop="@dimen/margin_10"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/gray_light"
+                android:layout_margin="@dimen/margin_5"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center" >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/call_icon"/>
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="+966 5874658712"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_medium_18"
+                    android:layout_marginTop="@dimen/margin_10"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

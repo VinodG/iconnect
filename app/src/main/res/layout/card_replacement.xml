@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8"
+            android:text="@string/captured_retained_by_atm"
+            android:textColor="@color/text_color_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_lost_card_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:onClick="lost_card_type"
+                android:text="@string/lost_card"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioButton
+                android:id="@+id/rb_damaged_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:onClick="lost_card_type"
+                android:text="@string/damaged_card"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioButton
+                android:id="@+id/rb_capture_retained"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:onClick="lost_card_type"
+                android:text="Captured/Retained by ATM"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/ll_capture_card_issue_if_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/rb_capture_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_check_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="captureCardClick"
+                    android:text="Captured Card (Immediate Re-Issuance)"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_14" />
+
+                <CheckBox
+                    android:id="@+id/rb_capture_card_noissue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_check_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="captureCardClick"
+                    android:text="Captured Card (7 day hold until card returns  \n from bank, if not re-issue)"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_14" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvContributionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/company_details"
+        android:textAllCaps="true"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/content_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_compnay_ame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/company_name"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/et_compnay_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line_full"
+                android:hint="From"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/tvBranchID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/branch_id"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/tv_brach_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/tvPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/authorized_person"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+
+            <EditText
+                android:id="@+id/et_authorized_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:enabled="false"
+                android:hint="@string/authorized_person"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tvContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+
+                android:text="@string/contact_number"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/tv_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvC3CardMemberDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/c3_card_member_details"
+            android:textAllCaps="true"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/content_bg"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvCardMemberFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/card_member_full_name"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/tv_CarMemberdName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/tvCardHolderMobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/card_holder_mobile_num"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etCardHolderMobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="Please enter Card Holder\'s Mobile Number"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tvEmployeeIDno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/employee_id_no"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/etEmployeeIDno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginRight="@dimen/margin_8"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_10" />
+
+            <TextView
+                android:id="@+id/tvC3PayrollCardNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_8"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/c3_payroll_card_number"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etC3PayrollCardNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:hint="@string/c3_payroll_card_number"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

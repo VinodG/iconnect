@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:maxLines="2"
+        android:text="@string/salary_transfer_letter_header"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/content_bg"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_15"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:text="@string/salary_transfer_letter"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbSalaryTransYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickSalaryTransfer"
+                android:text="@string/yes"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <RadioButton
+                android:id="@+id/rbSalaryTransNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickSalaryTransfer"
+                android:text="@string/no"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/name_of_bank"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/name_of_bank"
+                android:inputType="textCapSentences"
+                android:textColor="@color/text_light"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <!--bank acoount number newly added-->
+            <TextView
+                android:id="@+id/tv_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/account_no"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/account_no"
+                android:inputType="number"
+                android:textColor="@color/text_light"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/IBAN"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etIban_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:hint="@string/IBAN"
+                android:maxLength="23"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/do_you_bank_loan"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbBankLoanYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickBankLoans"
+                android:text="@string/yes"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+
+            <RadioButton
+                android:id="@+id/rbBankLoanNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickBankLoans"
+                android:text="@string/no"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llBankLoans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="Bank Name"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etLoanBankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="Bank Name"
+                android:textColor="@color/text_light"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tvTotalLoantaken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/total_loan_taken"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etTotalLoanTaken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/total_loan_taken"
+                android:inputType="number"
+                android:textColor="@color/text_light"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/loan_Appl_on"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/tvLoanAppliedOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:drawableRight="@drawable/calander"
+                android:hint="@string/loan_Appl_on"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_13"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_15" />
+
+            <TextView
+                android:id="@+id/tvOutstandingAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/outstanding_date"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etOutstanding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/outstanding_date"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/last_installment"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <TextView
+                android:id="@+id/tvLastInstallment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:drawableRight="@drawable/calander"
+                android:hint="@string/last_installment"
+                android:paddingLeft="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_13"
+                android:layout_marginTop="@dimen/margin_8"
+                android:background="@drawable/line_full"
+                android:paddingLeft="@dimen/margin_15" />
+
+            <TextView
+                android:id="@+id/tvMonthlyInstallment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/monthly_instlment"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etMonthlyInstallment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:hint="@string/monthly_instlment"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/details_of_bank_loan"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:layout_marginTop="@dimen/margin_5"
+        android:padding="@dimen/margin_10"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvPurposeOfLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/purpose_of_loan"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <EditText
+            android:id="@+id/etPurposeOfLoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/common_data_input_field"
+            android:gravity="left"
+            android:hint="@string/startTTypingHere"
+            android:inputType="textCapSentences|textMultiLine"
+            android:paddingLeft="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_3"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:id="@+id/tvBankDetailsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/name_of_bank"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <EditText
+            android:id="@+id/etBankDetailsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/text_light"
+            android:hint="@string/name_of_bank"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:id="@+id/tvTotalLoanAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/total_loan_Amt_req"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <EditText
+            android:id="@+id/etTotalLoanAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/total_loan_Amt_req"
+            android:inputType="number"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/monthly_installment"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <EditText
+            android:id="@+id/etMonthlyInstal_50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:layout_marginTop="@dimen/margin_5"
+            android:hint="@string/monthly_installment"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_5"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/do_you_have_credit_card"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbCreditCardYes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickCreditCard"
+                android:text="@string/yes"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioButton
+                android:id="@+id/rbCreditCardNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawablePadding="@dimen/margin_10"
+                android:gravity="center|start"
+                android:onClick="onClickCreditCard"
+                android:text="@string/no"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14" />
+        </RadioGroup>
+        <LinearLayout
+            android:id="@+id/llCreditCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCc_BankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="CC Bank Name"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etCc_BankName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="CC Bank Name"
+                android:inputType="textCapSentences"
+                android:textColor="@color/text_light"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tvCc_outStandingAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:text="@string/credit_limit"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/etCc_outStandingAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:hint="@string/credit_limit"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/llUndertaking"
+        layout="@layout/undertaking_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"/>
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.winit.common.webAccessLayer.ServiceUrls"/>
+
+        <variable
+            name="feedDetail"
+            type="com.winit.iKonnect.dataobject.FeedDetail"/>
+
+        <variable
+            name="detailType"
+            type="java.lang.String"/>
+
+        <import type="com.winit.common.constant.AppConstants"/>
+        <import type="com.winit.iKonnect.dataobject.PostFeedActionDO"/>
+        <import type="android.view.View"/>
+        <import type="com.winit.common.util.CalendarUtil"/>
+        <import type="com.winit.common.util.StringUtils"/>
+        <import type="java.util.Locale"/>
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_5"
+            android:paddingTop="@dimen/margin_5"
+            android:paddingRight="@dimen/margin_10"
+            android:paddingEnd="@dimen/margin_10"
+            app:paddingStart="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10">
+            <com.winit.iKonnect.ui.customview.CustomImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:tag="true"
+                android:layout_gravity="center"
+                app:imageUrl="@{StringUtils.isEmpty(feedDetail.photoUrl)?``:ServiceUrls.PROFILE_PIC+feedDetail.photoUrl}"
+                app:error="@{@drawable/profile_pic}"
+                android:background="@drawable/gray_circle_boarder"
+                android:padding="@dimen/margin_2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginStart="@dimen/margin_10"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{StringUtils.capitalizeString(feedDetail.staffName)}"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_very_small_14"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{feedDetail.comment}"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:visibility="@{detailType.equalsIgnoreCase(PostFeedActionDO.COMMENT) ? View.VISIBLE :  View.GONE}"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:text="@{CalendarUtil.getDetailTime(detailType.equalsIgnoreCase(PostFeedActionDO.COMMENT)?feedDetail.commentTime:feedDetail.likeTime)}"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"/>
+    </LinearLayout>
+</layout>

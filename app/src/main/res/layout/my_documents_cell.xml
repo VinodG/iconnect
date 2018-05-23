@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="myDocumentsDO"
+            type="com.winit.iKonnect.dataobject.MyDocumentsDO" />
+
+        <variable
+            name="myDocumentsBinder"
+            type="com.winit.iKonnect.adapter.MyDocumentsAdapter.MyDocumentsBinder" />
+
+        <import type="com.winit.common.webAccessLayer.ServiceUrls" />
+
+        <import type="com.winit.common.application.IKonnectApplication" />
+
+        <import type="android.view.View" />
+
+        <import type="com.winit.iKonnect.R" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_5"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:onClick="@{()->myDocumentsBinder.downLoadDocuments(myDocumentsDO.DocPath)}"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@{ServiceUrls.DOCUMENTS_URL + myDocumentsDO.FolderPath}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{myDocumentsDO.DocName}"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{myDocumentsDO.UploadDate}"
+            android:textColor="@color/text_color_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+    </LinearLayout>
+</layout>

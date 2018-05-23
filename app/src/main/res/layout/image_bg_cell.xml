@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/llImageLL"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_width"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="2dp" >
+
+        <ProgressBar
+            android:id="@+id/pbThumb"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvImageType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="Image"
+            android:textColor="@color/text_color_normal"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:src="@drawable/almarai_locations"
+            android:layout_weight="1"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/margin_5"
+            android:gravity="center"
+            android:singleLine="false"
+            android:text="Image"
+            android:textColor="@color/text_color_normal" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_alignRight="@+id/llImageLL"
+        android:background="@drawable/close_dailog"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_10"
+        android:visibility="gone"/>
+
+</RelativeLayout>

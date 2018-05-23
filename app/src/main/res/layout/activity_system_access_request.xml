@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10"
+    android:background="@drawable/content_bg"
+    android:layout_marginTop="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_10"
+    tools:context="com.winit.iKonnect.ui.activities.SystemAccessRequestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvSap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/sap"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbSap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_check_btn"
+            android:drawablePadding="@dimen/margin_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/network"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbNetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_check_btn"
+            android:drawablePadding="@dimen/margin_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/email"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_check_btn"
+            android:drawablePadding="@dimen/margin_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/internet"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbInternet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_check_btn"
+            android:drawablePadding="@dimen/margin_15"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/extension"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cbExtension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/custom_check_btn"
+            android:drawablePadding="@dimen/margin_15"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="Remarks (Mention any specific Usernames which are required to be displayed)"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small" />
+
+    <EditText
+        android:id="@+id/etRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_data_input_field"
+        android:gravity="left"
+        android:hint="@string/startTTypingHere"
+        android:inputType="textCapSentences|textMultiLine"
+        android:paddingTop="@dimen/margin_3"
+        android:textColor="@color/text_light"
+        android:paddingLeft="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_5"
+        android:textSize="@dimen/text_size_very_small_12"
+        android:scrollbars = "vertical"/>
+
+
+</LinearLayout>

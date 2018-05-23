@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="serviceRequestDO"
+            type="com.winit.iKonnect.dataobject.ServiceRequestDO" />
+
+        <variable
+            name="trackServiceBinder"
+            type="com.winit.iKonnect.adapter.TrackServicesAdapter.TrackServiceBinder" />
+
+        <import type="com.winit.iKonnect.dataobject.ServiceDO" />
+
+        <import type="com.winit.iKonnect.dataobject.ServiceRequestDO" />
+
+        <import type="com.winit.common.util.CalendarUtil" />
+
+        <import type="android.view.View" />
+
+        <import type="java.util.Locale" />
+
+        <import type="com.winit.common.util.StringUtils" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:onClick="@{() ->trackServiceBinder.gotoDetails(serviceRequestDO)}"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/track_card"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@{ServiceDO.getFormImages(serviceRequestDO.formid)}" />
+          <!--  android:background="@{ServiceDO.getFormImages(serviceRequestDO.formid)}"-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:maxLines="3"
+                    android:text="@{ServiceDO.getFormName(serviceRequestDO.formid)}"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_size_very_small_12" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/status"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/text_size_very_small_11" />
+
+                    <TextView
+                        android:id="@+id/tvStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:paddingLeft="@dimen/margin_3"
+                        android:text="@{serviceRequestDO.status}"
+                        android:textColor="@{serviceRequestDO.statusToCheck.equalsIgnoreCase(ServiceRequestDO.REJECTED)?@color/red:@color/app_color}"
+                        android:textSize="@dimen/text_size_very_small_11" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|start">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/LastupdatedOn"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/text_size_very_small_11" />
+
+                    <TextView
+                        android:id="@+id/tvLastupdatedON"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/margin_3"
+                        android:text="@{StringUtils.isEmpty(serviceRequestDO.modifiedOn)?`N/A`:CalendarUtil.convertUTCtoDateFormat(serviceRequestDO.modifiedOn,`dd/MM/yyyy HH:mm`)}"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_very_small_11" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:layout_marginRight="@dimen/margin_10"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:onClick="@{() ->trackServiceBinder.showReason(serviceRequestDO)}"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/info"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:visibility="@{(serviceRequestDO.getStatus().equalsIgnoreCase(ServiceRequestDO.HOLD) || serviceRequestDO.getStatus.equalsIgnoreCase(ServiceRequestDO.REJECTED)) ?View.VISIBLE:View.INVISIBLE}" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_farword"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="@dimen/margin_8" />
+            </LinearLayout>
+<!--
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_weight="0.1"
+                android:gravity="start"
+                android:onClick="@{() ->trackServiceBinder.showReason(serviceRequestDO)}"
+                android:padding="@dimen/margin_5"
+                android:src="@drawable/info"
+                android:visibility="@{(serviceRequestDO.getStatus().equalsIgnoreCase(ServiceRequestDO.HOLD) || serviceRequestDO.getStatus.equalsIgnoreCase(ServiceRequestDO.REJECTED)) ?View.VISIBLE:View.INVISIBLE}" />
+-->
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+
+
+    <!--
+      <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/track_card"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@{ServiceDO.getFormImages(serviceRequestDO.formid)}" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:gravity="bottom|center|start"
+                        android:maxLines="3"
+                        android:text="@{ServiceDO.getFormName(serviceRequestDO.formid)}"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/text_size_very_small_14" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.3">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/status"
+                            android:textColor="@color/gray_light"
+                            android:textSize="@dimen/text_size_very_small_11" />
+
+                        <TextView
+                            android:id="@+id/tvStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text="@{serviceRequestDO.status}"
+                            android:textColor="@{serviceRequestDO.statusToCheck.equalsIgnoreCase(ServiceRequestDO.REJECTED)?@color/red:@color/app_color}"
+                            android:textSize="@dimen/text_size_very_small_11" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|start"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/LastupdatedOn"
+                            android:textColor="@color/gray_light"
+                            android:textSize="@dimen/text_size_very_small_11" />
+
+                        <TextView
+                            android:id="@+id/tvLastupdatedON"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLength="30"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/margin_10"
+                            android:text="@{StringUtils.isEmpty(serviceRequestDO.completedTime)?`N/A`:CalendarUtil.getDate(serviceRequestDO.completedTime,`dd/MM/yyyy HH:mm`,CalendarUtil.DD_MMM_YYYY_Comma_PATTERN,Locale.getDefault(),``)}"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_size_very_small_11" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_weight="0.1"
+                    android:gravity="start"
+                    android:onClick="@{() ->trackServiceBinder.showReason(serviceRequestDO.hrComments)}"
+                    android:padding="@dimen/margin_5"
+                    android:src="@drawable/info"
+                    android:visibility="@{(serviceRequestDO.getStatus().equalsIgnoreCase(ServiceRequestDO.HOLD) || serviceRequestDO.getStatus.equalsIgnoreCase(ServiceRequestDO.REJECTED)) ?View.VISIBLE:View.GONE}" />
+            </LinearLayout>-->

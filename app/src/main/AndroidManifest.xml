@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winit.iKonnect">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SDCARD_WRITE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!--
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission
+        android:name="com.winit.iKonnect.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.softzino.eConnect.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.winit.common.application.IKonnectApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SearchEmployee"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.PersonalChatRoomActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.CalenderViewDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ChooseLangaugeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.TermsandCondition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.NotificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DimTheme" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.DashboardActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.MyProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.FeedActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_FEED_ACTIVITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.UserNavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.AppDetailPagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.TrackServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.OTPValidationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.StaffDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.NotificationDetailActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="OPEN_NOTIFICATION_DETAIL" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.WelcomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.InboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ChatRoomActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- *************************************** GCM Push Notification *************************************** -->
+
+
+        <!-- <receiver -->
+        <!-- android:name="com.google.android.gms.gcm.GcmReceiver" -->
+        <!-- android:exported="true" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+        <!-- <category android:name="com.softzino.eConnect" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <!-- <service -->
+        <!-- android:name="com.softzino.common.gcm.AppNotificationListenerService" -->
+        <!-- android:exported="false" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- <service -->
+        <!-- android:name="com.softzino.common.gcm.GCMInstanceIDListenerService" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.gms.iid.InstanceID" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <!-- <service -->
+        <!-- android:name="com.softzino.common.gcm.RegisterGCMIntentService" -->
+        <!-- android:exported="false"> -->
+        <!-- </service> -->
+        <!-- *************************************** GCM Push Notification *************************************** -->
+
+        <service android:name="com.winit.common.gcm.IkonnectFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.winit.common.gcm.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.PasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ForgotPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.PaySlipActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Ikonnect -->
+        <!-- newly added by sandeep -->
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.BusinessCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <!-- android:windowSoftInputMode="adjustNothing"-->
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.BusinessTravelAdviceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.HouseAllowanceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.PassportReleaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.CommitmentFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.TransportLoanRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SystemAccessRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.LeaveJoining"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.LeaveApplicationActivtiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.VisitVisaForSpouseChildren"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.VisitVisaForinLawsChildren"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.FamilyVisaJoiningForSpouseChildren"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.FamilyVisaJoiningForParents"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.CardStatementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.CardCancellationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.CardReplacementActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.AtmSwitchClaimActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SalaryTransferRequestBankAccount"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SalaryCertificateRequestForm"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.SalaryTransferLetterRequest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.TrackServiceDetails"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="OPEN_TRACK_SERVICE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.StaffDetailActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.MyDocumentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.PaySlipActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.winit.iKonnect.ui.activities.EmployeeListActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

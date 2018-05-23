@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8"
+        android:paddingLeft="@dimen/margin_10"
+        android:textColor="@color/text_dark"
+        android:text="Kindly arrange to transfer my salary to my bank account number " />
+
+    <LinearLayout
+        android:id="@+id/ll_salary_transfer_request_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvbank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/bank_name"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/name_of_bank"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tv_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/account_no"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_account_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/account_no"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:id="@+id/tv_ibn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/IBAN"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_ibn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:hint="@string/IBAN"
+                android:inputType="textCapSentences"
+                android:maxLength="23"
+                android:paddingLeft="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

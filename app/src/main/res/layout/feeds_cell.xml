@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="feedDo"
+            type="com.winit.iKonnect.dataobject.FeedsDO"/>
+
+        <variable
+            name="feedBinder"
+            type="com.winit.iKonnect.module.feed.FeedBinder" />
+
+        <variable name="isCommentEnable" type="boolean"/>
+
+        <import type="android.view.View"/>
+        <import type="com.winit.iKonnect.module.feed.FeedBinder"/>
+        <import type="com.winit.iKonnect.ui.customview.CustomImageView"/>
+        <import type="com.winit.iKonnect.dataobject.PostFeedActionDO"/>
+        <import type="com.winit.iKonnect.dataobject.CmspostcontentModelDO"/>
+        <import type="com.winit.common.webAccessLayer.ServiceUrls"/>
+        <import type="com.winit.common.util.CalendarUtil"/>
+        <import type="com.winit.common.util.StringUtils"/>
+        <import type="com.winit.common.constant.AppConstants"/>
+        <import type="java.util.Locale"/>
+
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvFeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_5"
+        android:layout_marginEnd="@dimen/margin_5"
+        android:layout_marginStart="@dimen/margin_5"
+        android:layout_marginLeft="@dimen/margin_5">
+
+        <LinearLayout
+            android:id="@+id/ll_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() ->feedBinder.openFeed(feedDo)}"
+            android:orientation="vertical">
+
+            <com.winit.iKonnect.ui.customview.CustomImageView
+                android:id="@+id/ivFeedImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:adjustViewBounds="true"
+                android:onClick="@{() ->feedBinder.viewFeedImage(feedDo)}"
+                android:scaleType="centerCrop"
+                android:visibility="@{!StringUtils.isEmpty(feedDo.coverPictureEnUrl)?View.VISIBLE:View.GONE}"
+                app:setImage="@{ServiceUrls.FEEDS_DATA+ StringUtils.encode(feedDo.coverPictureEnUrl).replaceAll(`\\+`, `%20`)}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/margin_15"
+                android:paddingLeft="@dimen/margin_15"
+                android:paddingRight="@dimen/margin_15"
+                android:paddingTop="@dimen/margin_15"
+                app:paddingStart="@dimen/margin_15">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+<!--
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@{FeedBinder.getFeedIcon(feedDo.categoryId)}"/>
+-->
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginStart="@dimen/margin_5"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="2"
+                            android:text="@{feedDo.titleEn.trim()}"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/text_size_small_16"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{CalendarUtil.compareYear(CalendarUtil.getYear(feedDo.modifiedOn,CalendarUtil.SEC_DATE_PATTERN,CalendarUtil.YY_PATTERN, Locale.getDefault(),``),CalendarUtil.getCurrentYear()) ? CalendarUtil.getDate(feedDo.modifiedOn,CalendarUtil.SEC_DATE_PATTERN,CalendarUtil.dd_MM_yyyy_EEEE_PATTERN, Locale.getDefault(),``):CalendarUtil.getDate(feedDo.modifiedOn,CalendarUtil.SEC_DATE_PATTERN,CalendarUtil.dd_MMMM_PATTERN, Locale.getDefault(),``)}"
+                            android:textSize="@dimen/text_size_very_small_12"/>
+                        <!--android:text="@{CalendarUtil.getDate(feedDo.createdOn,CalendarUtil.SEC_DATE_PATTERN,CalendarUtil.dd_MM_yyyy_EEEE_PATTERN, Locale.getDefault(),``)}"-->
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() ->feedBinder.postAction(PostFeedActionDO.FAVORITE,feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingStart="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:src="@{feedDo.cmspostuserModel!=null?(feedDo.cmspostuserModel.hasFavorite?@drawable/star_selected:@drawable/star_unselected):@drawable/star_unselected}"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text="@{feedDo.subtitleEn.trim()}"
+                    android:textSize="@dimen/text_size_very_small_12"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text='@{feedDo.cmspostcontentModel!= null?feedDo.cmspostcontentModel.contentEn:""}'
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:visibility="@{!isCommentEnable?(feedDo.cmspostcontentModel!= null?(feedDo.cmspostcontentModel.type.equalsIgnoreCase(CmspostcontentModelDO.CONTENT)?View.VISIBLE:View.GONE):View.GONE):View.GONE}"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="@{isCommentEnable?View.VISIBLE:View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="@{() ->feedBinder.details(PostFeedActionDO.LIKE,feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@{PostFeedActionDO.format(@string/likes,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfLikes:0,PostFeedActionDO.LIKE)}"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfLikes == 0?View.GONE:View.VISIBLE):View.GONE}"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=", "
+                        android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfComments == 0 || feedDo.cmspoststatModel.noOfLikes == 0?View.GONE:View.VISIBLE):View.GONE}"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_5"
+                        android:onClick="@{() ->feedBinder.details(PostFeedActionDO.COMMENT,feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@{PostFeedActionDO.format(@string/comments,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfComments:0,PostFeedActionDO.COMMENT)}"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfComments == 0?View.GONE:View.VISIBLE):View.GONE}"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@{PostFeedActionDO.format(@string/views,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfViews:0,PostFeedActionDO.VIEW)}"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfViews == 0?View.GONE:View.VISIBLE):View.GONE}"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="@{!isCommentEnable?View.VISIBLE:View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@{PostFeedActionDO.format(@string/views,feedDo.cmspoststatModel!= null?feedDo.cmspoststatModel.noOfViews:0,PostFeedActionDO.VIEW)}"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:visibility="@{feedDo.cmspoststatModel!= null?(feedDo.cmspoststatModel.noOfViews == 0?View.GONE:View.VISIBLE):View.GONE}"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"/>
+                    <LinearLayout
+                        android:id="@+id/ll_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:onClick="@{() ->feedBinder.viewFiles(feedDo)}"
+                            android:src="@{feedDo.cmspostcontentModel!= null?(feedDo.cmspostcontentModel.type.equalsIgnoreCase(CmspostcontentModelDO.URL)?@drawable/view:@drawable/download):@drawable/download}"
+                            android:visibility="@{feedDo.cmspostcontentModel!= null?(feedDo.cmspostcontentModel.type.equalsIgnoreCase(CmspostcontentModelDO.FILE) || feedDo.cmspostcontentModel.type.equalsIgnoreCase(CmspostcontentModelDO.URL)?View.VISIBLE:View.GONE):View.GONE}"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/attachment"
+                            app:font="@{AppConstants.BOLD}"
+                            android:visibility="@{feedDo.cmspostcontentModel!= null?(feedDo.cmspostcontentModel.type.equalsIgnoreCase(CmspostcontentModelDO.FILE)?View.VISIBLE:View.GONE):View.GONE}"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:background="@color/divider_color"
+                android:visibility="@{feedDo.cmspostsettingModel!= null?((feedDo.cmspostsettingModel.hasLike || feedDo.cmspostsettingModel.hasComments || feedDo.cmspostsettingModel.hasSharing)?View.VISIBLE:View.GONE):View.GONE}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="@{feedDo.cmspostsettingModel!= null?(feedDo.cmspostsettingModel.hasLike?View.VISIBLE:View.GONE):View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/like"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableStart="@drawable/like"
+                        android:onClick="@{() ->feedBinder.postAction(PostFeedActionDO.LIKE,feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@{feedDo.cmspostuserModel!= null?(feedDo.cmspostuserModel.hasLiked?@string/liked:@string/like):@string/like}"
+                        android:textColor="@color/app_color"
+                        app:font="@{AppConstants.BOLD}"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="@{feedDo.cmspostsettingModel!= null?(feedDo.cmspostsettingModel.hasComments?View.VISIBLE:View.GONE):View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/comment"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableStart="@drawable/comment"
+                        android:onClick="@{() ->feedBinder.details(PostFeedActionDO.COMMENT,feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@string/comment"
+                        android:textColor="@color/app_color"
+                        app:font="@{AppConstants.BOLD}"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="@{feedDo.cmspostsettingModel!= null?(feedDo.cmspostsettingModel.hasSharing?View.VISIBLE:View.GONE):View.GONE}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/share"
+                        android:drawablePadding="@dimen/margin_10"
+                        android:drawableStart="@drawable/share"
+                        android:onClick="@{() ->feedBinder.share(feedDo)}"
+                        android:paddingBottom="@dimen/margin_5"
+                        android:paddingTop="@dimen/margin_5"
+                        android:text="@string/share"
+                        android:textColor="@color/app_color"
+                        app:font="@{AppConstants.BOLD}"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sp"
+    android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
+    android:paddingBottom="@dimen/margin_15">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signuo"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:onClick="moveToSignUp"
+        android:layout_marginBottom="@dimen/margin_15"
+        android:text="@string/SIGNUP"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn"
+        android:textColor="@color/blue"
+        android:text="@string/LOGIN"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:onClick="goToLogin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn"
+        android:textColor="@color/blue"
+        android:text="FREE USER"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:onClick="freeuser"/>
+</LinearLayout>

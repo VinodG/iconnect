@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/content_bg"
+    android:layout_marginTop="@dimen/margin_10"
+    android:orientation="vertical"
+    android:id="@+id/llMain"
+    tools:context="com.winit.iKonnect.ui.activities.CommitmentFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <TextView
+            android:id="@+id/tvContributionHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contribution_amt"
+            android:visibility="gone"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etContributionAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:hint="@string/contribution_amt"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingRight="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_3"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I pledge to contribute a sum of"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14"/>
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Contribution Amount"
+            android:ems="15"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_10"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" from my salary every month to the Reach Out Fund."
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/Remarks"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/etRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:background="@drawable/common_data_input_field"
+            android:gravity="left"
+            android:inputType="textCapSentences|textMultiLine"
+            android:hint="@string/startTTypingHere"
+            android:paddingLeft="@dimen/margin_10"
+            android:paddingTop="@dimen/margin_3"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

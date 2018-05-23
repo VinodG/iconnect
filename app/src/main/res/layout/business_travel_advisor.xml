@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/destination"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+
+            <EditText
+                android:id="@+id/tv_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/common_data_input_field"
+                android:gravity="left"
+                android:hint="@string/startTTypingHere"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_3"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <!--puropse of travel-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/purpose_of_travel"
+                android:textColor="@color/text_color_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_purpose_of_travel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Purpose of Travel"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <!--start date & end Date-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text="@string/start_date"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_very_small_14" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/end_date"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:textColor="@color/text_dark"
+                        android:textSize="@dimen/text_size_very_small_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/calander"
+                        android:hint="@string/start_date"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:text=""
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_size_very_small_12" />
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableRight="@drawable/calander"
+                        android:paddingLeft="@dimen/margin_3"
+                        android:hint="@string/end_date"
+                        android:text=""
+                        android:textColor="@color/text_light"
+                        android:textSize="@dimen/text_size_very_small_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_7"
+                        android:layout_weight="1"
+                        android:background="@drawable/line_full" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_7"
+                        android:textColor="@color/text_light"
+                        android:layout_weight="1"
+                        android:background="@drawable/line_full" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/contact_number_during_bussiness_travel"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contact_number_during_bussiness_travel"
+                android:inputType="number"
+                android:maxLength="16"
+                android:paddingLeft="@dimen/margin_5"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--ticket required-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginRight="@dimen/margin_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ticket_required"
+                android:textColor="@color/text_dark"
+                android:paddingLeft="@dimen/margin_5"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_ticket_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkTicket"
+                    android:text="Yes"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+
+                <RadioButton
+                    android:id="@+id/rd_ticket_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkTicket"
+                    android:text="No"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/ll_sector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:layout_marginTop="@dimen/margin_8"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="@string/sector_required"
+                    android:textColor="@color/text_dark"
+                    android:textSize="@dimen/text_size_very_small_14" />
+
+                <EditText
+                    android:id="@+id/et_sector_required"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:background="@drawable/common_data_input_field"
+                    android:gravity="left"
+                    android:hint="@string/startTTypingHere"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:paddingTop="@dimen/margin_3"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_14"
+                    android:scrollbars = "vertical"/>
+
+
+            </LinearLayout>
+
+            <!--visa requied-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/visa_required"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_visa_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkVisa"
+                    android:text="Yes"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+
+                <RadioButton
+                    android:id="@+id/rd_visa_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkVisa"
+                    android:text="No"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+            </RadioGroup>
+
+            <!--Hotel Accomidation-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_5"
+                android:text="@string/hotel_accomidation"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_hotel_accomidation_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkHotelAccomidation"
+                    android:text="Yes"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+
+                <RadioButton
+                    android:id="@+id/rd_hotel_accomidation_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/custom_redio_btn"
+                    android:drawablePadding="@dimen/margin_10"
+                    android:onClick="checkHotelAccomidation"
+                    android:text="No"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_cost_debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_5"
+                android:layout_marginBottom="1dp"
+                android:text="@string/cost_debit_to"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_cost_debit_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/common_data_input_field"
+                android:gravity="left"
+                android:hint="@string/startTTypingHere"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_3"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="@string/any_other_requirement"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14" />
+
+            <EditText
+                android:id="@+id/et_another_requirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@drawable/common_data_input_field"
+                android:gravity="left"
+                android:hint="@string/startTTypingHere"
+                android:inputType="textCapSentences|textMultiLine"
+                android:paddingLeft="@dimen/margin_10"
+                android:paddingTop="@dimen/margin_3"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_bgnew"
+    android:gravity="center|center_horizontal"
+    android:paddingBottom="@dimen/margin_15">
+
+    <TextView
+        android:id="@+id/tv_signUpHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_30"
+
+        android:drawableBottom="@drawable/textunderline"
+        android:drawablePadding="@dimen/margin_5"
+        android:gravity="center"
+        android:text="@string/SIGNUP"
+        android:paddingLeft="@dimen/margin_5"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/text_size_normal"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/etStaffID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_feild"
+        android:paddingLeft="@dimen/margin_5"
+        android:hint="@string/StaffID_Hint"
+        android:inputType="number"
+        android:textSize="@dimen/text_size_very_small_14"
+        android:singleLine="true"
+        android:layout_marginBottom="@dimen/text_size_very_small_14"
+        />
+
+    <Button
+        android:id="@+id/btn_signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:background="@drawable/signuo"
+        android:gravity="center"
+        android:onClick="MoveToOtpScreen"
+        android:text="@string/SIGNUP"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

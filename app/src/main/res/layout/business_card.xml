@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@drawable/content_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginRight="@dimen/margin_10"
+        android:padding="@dimen/margin_15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="@string/city"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:hint="Please select the City"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:drawableRight="@drawable/down_arow" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_full" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="P.O Box"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_po_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:clickable="false"
+            android:textColor="@color/text_light"
+            android:hint="Please enter post box number"
+            android:inputType="textCapSentences"
+            android:layout_marginTop="@dimen/margin_10"
+            android:scrollbars = "vertical"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_full" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Tel No:"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_tel_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789+"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:clickable="false"
+            android:textColor="@color/text_light"
+            android:hint="Please enter Tel No."
+            android:background="@color/transparent"
+            android:layout_marginTop="@dimen/margin_5"
+            android:scrollbars = "vertical"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_full" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="Ext"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/et_ext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:hint="Please enter Ext"
+            android:textColor="@color/text_light"
+            android:background="@color/transparent"
+            android:layout_marginTop="@dimen/margin_5"
+            android:scrollbars = "vertical"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/line_full" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fax No"
+                    android:textSize="@dimen/text_size_very_small_14"
+                    android:textColor="@color/text_dark" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mobile (CUG)"
+                    android:textSize="@dimen/text_size_very_small_14"
+                    android:textColor="@color/text_dark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_5">
+
+                <EditText
+                    android:id="@+id/et_fax_no"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="Enter Fax No"
+                    android:textColor="@color/text_light"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:scrollbars = "vertical"/>
+
+                <EditText
+                    android:id="@+id/et_mobile_cug"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_light"
+                    android:digits="0123456789+"
+                    android:imeOptions="actionNext"
+                    android:textSize="@dimen/text_size_very_small_12"
+                    android:hint="Mobile (CUG)"
+                    android:scrollbars = "vertical"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@string/email"
+                android:textSize="@dimen/text_size_very_small_14"
+                android:textColor="@color/text_dark" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_light"
+                android:hint="@string/email"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scrollbars = "vertical"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_full" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="website"
+                android:textSize="@dimen/text_size_very_small_14"
+                android:textColor="@color/text_dark" />
+
+            <EditText
+                android:id="@+id/et_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:text="www.alseer.com"
+                android:clickable="false"
+                android:layout_marginTop="@dimen/margin_10"
+                android:scrollbars = "vertical"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/line_full" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

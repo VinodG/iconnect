@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/content_bg"
+    android:layout_marginTop="@dimen/margin_10"
+    tools:context="com.winit.iKonnect.ui.activities.TransportLoanRequestActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="@string/do_you_have_valid_licence"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rbDL_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:drawableLeft="@drawable/custom_redio_btn"
+            android:text="@string/yes"
+            android:drawablePadding="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:textColor="@color/text_light"
+            android:gravity="center|start"
+            android:onClick="drivingLicensde"/>
+        <RadioButton
+            android:id="@+id/rbDL_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/no"
+            android:button="@null"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:drawableLeft="@drawable/custom_redio_btn"
+            android:drawablePadding="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:textColor="@color/text_light"
+            android:gravity="center|start"
+            android:onClick="drivingLicensde"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I "
+                android:layout_marginLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:paddingLeft="@dimen/margin_10"
+                android:textSize="@dimen/text_size_very_small_14"/>
+            <TextView
+                android:id="@+id/tvStaffName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abdul Rasheed, "
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="would like to avail a Transport Loan amounting to"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_14"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10" >
+            <TextView
+                android:id="@+id/tvCurrency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(AED/OMR)"
+                android:textColor="@color/text_light"
+                android:focusable="true"
+                android:paddingLeft="@dimen/margin_10"
+                android:textSize="@dimen/text_size_very_small_14"/>
+            <EditText
+                android:id="@+id/etAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Amount"
+                android:ems="5"
+                android:inputType="number"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:scrollbars = "vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="which will be recovered from"
+                android:focusable="true"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my salary for a period not exceeding 36 months."
+            android:paddingLeft="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:layout_marginRight="@dimen/margin_10"
+            android:focusable="true"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_14"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:text="Brand"
+        android:textColor="@color/text_dark"
+        android:textSize="@dimen/text_size_very_small_14" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbBrandNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/custom_redio_btn"
+            android:drawablePadding="@dimen/margin_10"
+            android:gravity="center|start"
+            android:onClick="brandedPreowned"
+            android:text="@string/brand_new"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <RadioButton
+            android:id="@+id/rbPre_owned"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pre_owned"
+            android:button="@null"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:drawableLeft="@drawable/custom_redio_btn"
+            android:drawablePadding="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:textColor="@color/text_light"
+            android:gravity="center|start"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:onClick="brandedPreowned"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/llPreowned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/vehicle_make"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etVehicleMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/vehicle_make"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/vehicle_model"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etVehicleModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/vehicle_model"
+            android:inputType="number"
+            android:focusable="false"
+            android:paddingLeft="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/odometer_reading"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etOdometerRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/odometer_reading"
+            android:inputType="number"
+            android:paddingLeft="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/chassis_no"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etChassisNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/chassis_no"
+            android:paddingLeft="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/engine_no"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etEngineNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/engine_no"
+            android:paddingLeft="@dimen/margin_10"
+            android:scrollbars="vertical"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/text_size_very_small_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/vehicle_make"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etNewVehicleMake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:hint="@string/vehicle_make"
+            android:inputType="textCapSentences"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/vehicle_model"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etNewVehicleModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/vehicle_model"
+            android:inputType="number"
+            android:focusable="false"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/chassis_no"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etNewChassisNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/chassis_no"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:maxLines="1"
+            android:inputType="textCapSentences"
+            android:scrollbars = "vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_5"
+            android:paddingLeft="@dimen/margin_10"
+            android:text="@string/engine_no"
+            android:textColor="@color/text_dark"
+            android:textSize="@dimen/text_size_very_small_14" />
+
+        <EditText
+            android:id="@+id/etNewEngineNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/margin_10"
+            android:textColor="@color/text_light"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_marginTop="@dimen/margin_10"
+            android:hint="@string/engine_no"
+            android:paddingLeft="@dimen/margin_10"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:maxLines="1"
+            android:inputType="textCapSentences"
+            android:scrollbars = "vertical"/>
+    </LinearLayout>
+</LinearLayout>

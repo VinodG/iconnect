@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_Dashboard"
+            android:icon="@drawable/home"
+            app:actionLayout="@layout/menu_counters"
+            android:title="@string/dashboard"/>
+        <item
+            android:id="@+id/my_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/my_profile"/>
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/settings"
+            android:title="@string/settings"/>
+        <item
+            android:id="@+id/Chat"
+            android:icon="@drawable/chat"
+            app:actionLayout="@layout/menu_counters"
+            android:visible="false"
+            android:title="@string/Chat"/>
+        <item
+            android:id="@+id/Inbox"
+            android:icon="@drawable/inbox"
+            app:actionLayout="@layout/menu_counters"
+            android:title="@string/InBox"/>
+
+        <item
+            android:id="@+id/ItContactus"
+            android:icon="@drawable/contact_us"
+            android:title="@string/CU"/>
+        <item
+            android:id="@+id/TandC"
+            android:icon="@drawable/termsconditions"
+            android:title="@string/TandC"/>
+
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout"/>
+    </group>
+</menu>

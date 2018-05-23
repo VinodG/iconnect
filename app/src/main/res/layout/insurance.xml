@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Name"
+                android:id="@+id/tvName"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_small_16"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@null"
+                android:drawableBottom="@drawable/line_full"
+                android:hint="@string/EntreName"
+                android:paddingLeft="@dimen/margin_10"
+                android:inputType="textCapSentences"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_7"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="Relationship"
+                        android:id="@+id/tvRelationHeader"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/text_size_small_16"/>
+
+                    <TextView
+                        android:id="@+id/tvRelationship"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:drawableBottom="@drawable/line_half"
+                        android:drawableRight="@drawable/dropdownicon"
+                        android:paddingLeft="@dimen/margin_3"
+                        android:paddingRight="@dimen/margin_20"
+                        android:hint="Relationship"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="DOB"
+                        android:id="@+id/tvDOBHeader"
+                        android:textColor="@color/gray_light"
+                        android:textSize="@dimen/text_size_small_16"/>
+
+
+                    <TextView
+                        android:id="@+id/tvDOB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:drawableBottom="@drawable/line_half"
+                        android:drawableRight="@drawable/calander"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:hint="DOB"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginTop="@dimen/margin_15"
+                android:text="Id Number"
+                android:id="@+id/tvIdNumber"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/text_size_small_16"/>
+
+            <EditText
+                android:id="@+id/etIdNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_2"
+                android:background="@null"
+                android:inputType="textCapSentences"
+                android:drawableBottom="@drawable/line_full"
+                android:hint="@string/EnterIDNumber"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="com.winit.common.constant.AppConstants"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFamilyDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_weight=".8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_10"
+                    android:text="FAMILY DETAILS"
+                    android:textColor="@color/text_dark"
+                    android:paddingBottom="@dimen/margin_5"
+                    android:textSize="@dimen/text_size_very_small_14"
+                    app:font="@{AppConstants.BOLD}" />
+
+                <LinearLayout
+                    android:id="@+id/llDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_10">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/delete" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_bg"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:text="@string/name"
+                app:font="@{AppConstants.BOLD}"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/text_size_very_small_14"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:id="@+id/etName"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:hint="@string/EntreName"
+                android:inputType="textCapSentences"
+                android:paddingLeft="@dimen/margin_10"
+
+                android:textColor="@color/text_dark"
+                android:textSize="@dimen/text_size_very_small_12"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_15">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tvRelationHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/Relationship"
+                        app:font="@{AppConstants.BOLD}"
+                        android:textSize="@dimen/text_size_very_small_14"/>
+
+                    <TextView
+                        android:id="@+id/tvRelationship"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:paddingRight="@dimen/margin_20"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:hint="@string/Relationship"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:drawableRight="@drawable/dropdownicon"
+                        />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:background="@drawable/line_half"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvDOBHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:text="@string/DOB"
+                        app:font="@{AppConstants.BOLD}"
+                        android:textSize="@dimen/text_size_very_small_14"/>
+
+                    <TextView
+                        android:id="@+id/tvDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:drawableRight="@drawable/calander"
+                        android:paddingLeft="@dimen/margin_5"
+                        android:layout_marginRight="@dimen/margin_20"
+                        android:hint="@string/DOB"
+                        android:textSize="@dimen/text_size_very_small_12"
+                        android:layout_marginTop="@dimen/margin_15"
+                        />
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:layout_marginRight="@dimen/margin_10"
+                        android:layout_marginTop="@dimen/margin_2"
+                        android:background="@drawable/line_half"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvIdNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_15"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:text="ID Number"
+                app:font="@{AppConstants.BOLD}"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+          <!--  <TextView
+                android:id="@+id/tvNationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+
+                android:drawableRight="@drawable/dropdownicon"
+
+                android:textSize="@dimen/text_size_very_small_12"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="@string/SelectNationality"
+                android:layout_gravity="center"
+                />-->
+            <EditText
+                android:id="@+id/etIdNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:layout_marginTop="@dimen/margin_15"
+                android:background="@null"
+                android:inputType="number"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:layout_marginRight="@dimen/margin_20"
+                android:hint="@string/EnterIDNumber"
+                android:layout_gravity="center"
+                android:padding="@dimen/margin_5"
+                android:paddingLeft="@dimen/margin_10"
+                android:textColor="@color/text_dark"
+                />
+          <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:background="@drawable/line_half"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</layout>

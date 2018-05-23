@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="redioBTNDO"
+            type="com.winit.iKonnect.dataobject.RadioBTNDO"/>
+
+        <variable
+            name="RedioBTNBinder"
+            type="com.winit.iKonnect.adapter.RedioBTNAdapter.RedioBTNBinder" />
+
+        <import type="com.winit.common.constant.AppConstants"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{redioBTNDO.headerName}"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            app:font="@{AppConstants.BOLD}"
+            android:textSize="@dimen/text_size_very_small_14"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:tag="@{redioBTNDO}"
+            android:onCheckedChanged="@{RedioBTNBinder.onSplitTypeChanged}">
+
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_weight=".4"
+                android:id="@+id/rbFirst"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawableStart="@drawable/custom_redio_btn"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_marginStart="@dimen/margin_5"
+                android:layout_marginTop="@dimen/margin_10"
+                android:text="@{redioBTNDO.getOption(0)}"
+                android:tag="@{redioBTNDO.options[0]}"
+                android:drawablePadding="@dimen/margin_10"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:textColor="@color/text_light"
+
+               />
+            <RadioButton
+                android:id="@+id/rbSecond"
+                android:layout_width="0dp"
+                android:layout_weight=".6"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableLeft="@drawable/custom_redio_btn"
+                android:drawableStart="@drawable/custom_redio_btn"
+                android:text="@{redioBTNDO.getOption(1)}"
+                android:tag="@{redioBTNDO.options[1]}"
+                android:layout_marginTop="@dimen/margin_10"
+                android:drawablePadding="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginStart="@dimen/margin_20"
+                android:textSize="@dimen/text_size_very_small_12"
+                android:textColor="@color/text_light"/>
+        </RadioGroup>
+
+</LinearLayout>
+</layout>

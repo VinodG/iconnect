@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingStart="@dimen/margin_10"
+        android:textSize="@dimen/text_size_very_small_12"
+        android:layout_margin="@dimen/margin_5"/>
+
+    <com.winit.iKonnect.ui.customview.ExpandableHeightRecyclerView
+        android:id="@+id/rvComments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/llComment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_70"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_10">
+        <com.winit.iKonnect.ui.customview.CustomImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/profile_pic"
+            android:background="@drawable/gray_circle_boarder"
+            android:padding="@dimen/margin_2"/>
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_very_small_12"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginRight="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:background="@null"
+            android:inputType="textCapSentences|textMultiLine"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:hint="@string/comment_hint"/>
+        <ImageView
+            android:id="@+id/ivPostComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/send_button"/>
+    </LinearLayout>
+
+</LinearLayout>

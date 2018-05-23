@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.winit.iKonnect.ui.customview.ExpandableHeightRecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rvSelectedCategories"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/margin_5"
+    android:paddingLeft="@dimen/margin_5"
+    android:paddingBottom="@dimen/margin_5"/>

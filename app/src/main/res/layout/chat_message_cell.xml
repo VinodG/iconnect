@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlFriend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingEnd="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingTop="@dimen/margin_5">
+
+        <com.winit.iKonnect.ui.customview.CustomImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gray_circle_boarder"
+            android:padding="@dimen/margin_2"
+            android:tag="true"/>
+
+        <LinearLayout
+            android:id="@+id/llFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivProfile"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFriendName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_very_small_14"/>
+
+            <TextView
+                android:id="@+id/tvFriendText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_10"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_very_small_14"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFriendTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llFriend"
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_toRightOf="@id/ivProfile"
+            android:text="sdfgdasgfdasgdsfg"
+            android:textColor="@color/app_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlShelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_5"
+        android:paddingTop="@dimen/margin_5"
+        android:paddingRight="@dimen/margin_10"
+        android:paddingEnd="@dimen/margin_10"
+        android:paddingLeft="@dimen/margin_10">
+        <com.winit.iKonnect.ui.customview.CustomImageView
+            android:id="@+id/ivShelfProfile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:tag="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gray_circle_boarder"
+            android:padding="@dimen/margin_2"/>
+        <TextView
+            android:id="@+id/tvShelfMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/app_color"
+            android:padding="@dimen/margin_10"
+            android:layout_toLeftOf="@id/ivShelfProfile"
+            android:textSize="@dimen/text_size_very_small_14"/>
+        <TextView
+            android:id="@+id/tvShelftime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5"
+            android:textColor="@color/app_color"
+            android:text="sdfgdasgfdasgdsfg"
+            android:layout_toLeftOf="@id/ivShelfProfile"
+            android:layout_below="@id/tvShelfMessage"/>
+    </RelativeLayout>
+</LinearLayout>
